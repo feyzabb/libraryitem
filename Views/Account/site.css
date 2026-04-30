@@ -1,0 +1,25 @@
+﻿.login-btn {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+    .register-link p {
+        color: #6b7280;
+        font-size: 15px;
+    }
+
+    .register-link a {
+        color: #2563eb;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+        .register-link a:hover {
+            text-decoration: underline;
+        }

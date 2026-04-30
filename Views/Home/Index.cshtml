@@ -1,0 +1,184 @@
+﻿<link rel="stylesheet" href="~/css/site.css" />
+<nav class=" navbar navbar-expand-lg navbar-light bg-white border-bottom stick-top">
+<div class="container">
+        <a class="navbar-brand fw-bold text-primary fs-3" href="Home/Item">Library Item</a>
+
+        <div class="d-flex align-items-center gap-3">
+            <a class="nav-link" href="/Account/Basket">
+                <img src="https://static.vecteezy.com/system/resources/previews/010/576/702/original/basket-icon-logo-illustration-shopping-basket-symbol-template-for-graphic-and-web-design-collection-free-vector.jpg"
+                     alt="Kirala"
+                     style="width: 45px; height: 45px;"></a>
+            <button class="btn btn-danger rounded-pill px-4 fw-bold shadow-sm">
+                <i class="bi bi-camera-fill me-1"></i> Kirala
+</div>
+        </button>
+    </div>
+  
+</nav>
+<div class="bg-white border-bottom shadow-sm">
+    <div class="container">
+        <ul class="nav category-nav d-flex justify-content-between py-2">
+            <li class="na-item">
+                <button class="nav-link active" onclick="filterCategory('all')'">Tüm Kategoriler</button>
+            </li>
+            <li class="nav-item">
+				<button class="nav-link" onclick="filterCategory('sanat')">Sanat</button>
+                </li>
+			<li class="nav-item">
+                <button class="nav-link" onclick="filterCategory('elektronik')">Elektronik</button>
+			</li>
+            <li class="nav-item">
+				<button class="nav-link" onclick="filterCategory('ev-esyasi')">Ev Eşyası</button>
+                </li>
+			<li class="nav-item">
+				<button class="nav-link" onclick="filterCategory('bahce')">Bahçe</button>
+			</li>
+        </ul>
+    </div>
+</div>
+
+<section class="hero-section text-center py-5 bg-light">
+    <div class="container">
+        <h1 class="display-4 mb-3">Library Item'e Hoş Geldiniz!</h1>
+        <p class="lead mb-4">Eşyalarınızı paylaşarak kazanın, ihtiyacınız olanı kiralayarak tasarruf edin.</p>
+        <div class="search-bar mx-auto" style="max-width: 700px">
+            <div class="input-group shadow-sm">
+                <input type="text" class="form-control" placeholder="İlan, Kategori, Konum ara..." />
+                <button type="button" class="btn btn-primary px-4">Ara</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card mb-3 shadow-sm border-0 p-3 bg-white">
+                <h6 class="fw-bold mb-3">Kategoriler</h6>
+                <select class="form-select bg-light mb-3">
+                    <option value="">Tüm Kategoriler</option>
+                    <option value="1">Sanat</option>
+                    <option value="2">Elektronik</option>
+                    <option value="3">Ev Eşyası</option>
+                    <option value="4">Bahçe</option>
+                    <option value="5">Moda</option>
+                </select>
+
+                <h6 class="fw-bold mb-3">Konum Seç</h6>
+                <select class="form-select bg-light">
+                    <option value="">Tüm Konumlar</option>
+                    <option value="Hakkari">Hakkari</option>
+                    <option value="Van">Van</option>
+                    <option value="İstanbul">İstanbul</option>
+                    <option value="Ankara">Ankara</option>
+                    <option value="İzmir">İzmir</option>
+                </select>
+
+                <div class="mt-4">
+                    <div class="form-check form-switch mb-2">
+                        <input class="form-check-input" type="checkbox" id="kargo">
+                        <label class="form-check-label" for="kargo">Ücretsiz Kargo</label>
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="guvenli">
+                        <label class="form-check-label" for="guvenli">Güvenli Ödeme</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-9">
+            <h3 class="mb-4 fw-bold">Son Eklenen İlanlar</h3>
+
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="https://tse4.mm.bing.net/th/id/OIP.k-43T6LNjZTHbEMe1XYT_gHaE1?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top" alt="Keman">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Keman</h5>
+                            <p class="card-text text-primary fw-bold">350 ₺ / Günlük</p>
+                            <a href="Items/Create" class="btn btn-outline-primary btn-sm w-100">Detayları Gör</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="https://tse2.mm.bing.net/th/id/OIP._s6McSK8Dwd_samx3TTg3AHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top" alt="Çim Biçme Makinesi">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Çim Biçme Makinesi</h5>
+                            <p class="card-text text-primary fw-bold">700 ₺ / Günlük</p>
+                            <a href="Items/Create" class="btn btn-outline-primary btn-sm w-100">Detayları Gör</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="https://tse2.mm.bing.net/th/id/OIP.PIItuXnJ2SMWMrgUCAU7cwHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top" alt="Matkap">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Matkap</h5>
+                            <p class="card-text text-primary fw-bold">250 ₺ / Günlük</p>
+                            <a href="Items/Create" class="btn btn-outline-primary btn-sm w-100">Detayları Gör</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="https://tse3.mm.bing.net/th/id/OIP.2qGzS9-enCJUmoV1pUw41wHaLH?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top" alt="Moda">
+                        <div class="card-body text-center">
+							<h5 class="card-title>Abiye Elbise</h5>
+							<p class="card-text text-primary fw-bold">899 ₺ / Günlük</p>
+							<a href="Items/Create" class="btn btn-outline-primary btn-sm w-100">Detayları Gör</a>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="https://tse2.mm.bing.net/th/id/OIP.Gu79VDyilYYNIOcI86sMZwHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top" alt="Mini Buzdolabı">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Mini Buzdolabı</h5>
+                            <p class="card-text text-primary fw-bold">900 ₺ / Günlük</p>
+                            <a href="Items/Create" class="btn btn-outline-primary btn-sm w-100">Detayları Gör</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="https://tse4.mm.bing.net/th/id/OIP.gcSEfBv-0PE2m_-DcdQ60wHaEc?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"class="card-img-top" alt="Koltuk Takımı"> 
+                        <div class="card-body text-center">
+							<h5 class="card-title>Koltuk Takımı</h5>
+							<p class="card-text text-primary fw-bold">1500 ₺ / Günlük</p>
+							<a href="Items/Create" class="btn btn-outline-primary btn-sm w-100">Detayları Gör</a>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width: 400px;">
+                <div class="modal-content border-0 shadow-lg" style="border-radius: 20px;">
+                    <div class="modal-header border-0 pb-0">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Kapat"></button>
+                    </div>
+                    <div class="modal-body p-4 pt-0">
+                        <h2 class="fw-bold mb-3 text-center">Giriş Yap</h2>
+
+                        @await Html.PartialAsync("~/Views/Account/Login.cshtml")
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                
+
+
+      
+
+
+
+

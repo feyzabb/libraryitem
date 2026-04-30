@@ -1,0 +1,137 @@
+/* Genel Arka Plan - Sade beyazdan kurtardýk */
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%) !important;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #1f2937;
+}
+
+/* Üst Kýsým (Hero) */
+.hero-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.hero-card {
+    background: white;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 50px 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+    .hero-card h1 {
+        font-size: 48px;
+        font-weight: bold;
+        color: #1f2937;
+    }
+
+/* Ýlan Kartlarý Düzenlemesi (Bozulmayý önleyen kýsým) */
+.ilan-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    border: none !important;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: white;
+}
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+    }
+
+/* RESÝMLERÝ SABÝTLEME - Çim makinesi vb. burada düzeliyor */
+.card-img-top {
+    height: 110px;
+    object-fit: contain !important; /* Resim yamulmaz, kutuya sýðar */
+    padding: 10px;
+    background-color: #1d4ed8;
+    display: block;
+    margin: 0 auto;
+}
+
+.card-body {
+    padding: 15px ;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 0.5rem ;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.price-text {
+    color: #2563eb;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Sol Menü (Filtreler) */
+.filter-card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 20px;
+}
+
+.form-select {
+    border: 1px solid #e5e7eb !important;
+    border-radius: 8px !important;
+    margin-bottom: 15px;
+}
+
+/* Butonlar */
+.main-btn {
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    transition: 0.3s;
+}
+
+    .main-btn:hover {
+        background-color: #1d4ed8;
+        color: white;
+    }
+/* Kategori Menüsü Stili */
+.category-nav .nav-link {
+    color: #4b5563;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 8px 12px;
+    border: none;
+    background: none;
+    transition: 0.2s;
+}
+
+    .category-nav .nav-link:hover {
+        color: #2563eb;
+        background-color: #f3f4f6;
+        border-radius: 20px;
+    }
+
+    .category-nav .nav-link.active {
+        color: #ffffff;
+        background-color: #2563eb;
+        border-radius: 20px;
+    }
+
+/* Navbar gölgesi ve yüksekliði */
+.navbar {
+    height: 75px;
+}

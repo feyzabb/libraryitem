@@ -1,0 +1,49 @@
+﻿
+@{
+	ViewData["Title"] = "Yeni İlan Ekle";
+}
+<div class="container mt-5">
+   <h1>Yeni İlan Ekle</h1>
+   <p>Kiraya vermek istediğiniz ürünün bilgilerini giriniz</p>
+	   <form asp-action="Create" method="post" enctype="multipart/form-data">
+
+	  <div class="form-group">
+
+   <div class="mb-3">
+
+	   <label>Ürün Adı</label>
+	 <input type="text" name="Name" class="form-control" placeholder="Ürün İsmi" required />
+	    </div>
+
+		<div class="mb-3"> 
+		<label>Acıklama </label>
+		<textarea name="Description" class="form-control" placeholder="Ürün açıklaması"></textarea>
+		</div>
+
+		<select name="CategoryId" class="form-control mb-3">
+			<option value ="1">Ev Eşyası</option>
+			<option value="2">Elektronik</option>
+			<option value="3">Kadın</option>
+		</select>
+		<div class="mb-3">
+			<label>Günlük Ücret</label>
+			<input type="number" name="GünlükÜcret" class="form-contol" placeholder="Günlük Ücret" requried />
+		</div>
+		<button type="submit" class=btn btn-primary>İlan Ekle</button>
+		<a asp-controller="Home" asp-action="Index" class="btn btn-secondary">Geri Dön</a>
+
+
+
+		</form>
+		</div>
+		
+	  </div>
+		
+
+
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Üye Ol";
+}
+<link rel="stylesheet" href="~/css/site.css" />
+<div class="register-form-internal">
+    <form asp-controller="Account" asp-action="Register" method="post">
+        <div class="form-group mb-3 text-start">
+            <label class="fw-bold small">Ad Soyad</label>
+            <input type="text" name="FullName" class="form-control rounded-pill bg-light" placeholder="Adınızı girin" required />
+        </div>
+
+        <div class="form-group mb-3 text-start">
+            <label class="fw-bold small">E-posta</label>
+            <input type="email" name="Email" class="form-control rounded-pill bg-light" placeholder="E-posta adresinizi girin" required />
+        </div>
+
+        <div class="form-group mb-4 text-start">
+            <label class="fw-bold small">Şifre</label>
+            <input type="password" name="Password" class="form-control rounded-pill bg-light" placeholder="Şifrenizi girin" required />
+        </div>
+
+        <button type="submit" class="btn btn-danger w-100 rounded-pill py-2 fw-bold shadow-sm">Üye Ol</button>
+    </form>
+</div>
+
