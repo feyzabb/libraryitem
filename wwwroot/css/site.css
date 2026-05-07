@@ -1,4 +1,4 @@
-/* Genel Arka Plan - Sade beyazdan kurtardýk */
+/* Genel Arka Plan - Sade beyazdan kurtardï¿½k */
 body {
     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%) !important;
     background-attachment: fixed;
@@ -6,7 +6,7 @@ body {
     color: #1f2937;
 }
 
-/* Üst Kýsým (Hero) */
+/* ï¿½st Kï¿½sï¿½m (Hero) */
 .hero-section {
     padding: 60px 0;
     text-align: center;
@@ -27,7 +27,7 @@ body {
         color: #1f2937;
     }
 
-/* Ýlan Kartlarý Düzenlemesi (Bozulmayý önleyen kýsým) */
+/* ï¿½lan Kartlarï¿½ Dï¿½zenlemesi (Bozulmayï¿½ ï¿½nleyen kï¿½sï¿½m) */
 .ilan-container {
     display: flex;
     flex-wrap: wrap;
@@ -47,10 +47,10 @@ body {
         box-shadow: 0 12px 24px rgba(0,0,0,0.12);
     }
 
-/* RESÝMLERÝ SABÝTLEME - Çim makinesi vb. burada düzeliyor */
+/* RESï¿½MLERï¿½ SABï¿½TLEME - ï¿½im makinesi vb. burada dï¿½zeliyor */
 .card-img-top {
     height: 110px;
-    object-fit: contain !important; /* Resim yamulmaz, kutuya sýðar */
+    object-fit: contain !important; /* Resim yamulmaz, kutuya sï¿½ï¿½ar */
     padding: 10px;
     background-color: #1d4ed8;
     display: block;
@@ -76,7 +76,7 @@ body {
     font-size: 1.1rem;
 }
 
-/* Sol Menü (Filtreler) */
+/* Sol Menï¿½ (Filtreler) */
 .filter-card {
     background: white;
     border-radius: 15px;
@@ -108,7 +108,7 @@ body {
         background-color: #1d4ed8;
         color: white;
     }
-/* Kategori Menüsü Stili */
+/* Kategori Menï¿½sï¿½ Stili */
 .category-nav .nav-link {
     color: #4b5563;
     font-size: 0.9rem;
@@ -131,7 +131,312 @@ body {
         border-radius: 20px;
     }
 
-/* Navbar gölgesi ve yüksekliði */
+/* Navbar gï¿½lgesi ve yï¿½ksekliï¿½i */
 .navbar {
     height: 75px;
+}
+
+/* MINT YESILI TEMA */
+
+:root {
+    --main-color: #72c9b7;
+    --main-dark: #4fa392;
+    --background-color: #edf7f4;
+}
+
+/* SAYFA */
+
+body {
+    background-color: var(--background-color);
+}
+
+/* NAVBAR */
+
+.navbar {
+    background-color: white !important;
+    border-bottom: 1px solid #dbe5e1;
+}
+
+/* LOGO */
+
+.navbar-brand {
+    color: var(--main-dark) !important;
+    font-weight: bold;
+}
+
+/* MENU */
+
+.nav-link {
+    color: #355c55 !important;
+    font-weight: 500;
+}
+
+/* GIRIS IKONU */
+
+.login-icon {
+    font-size: 28px;
+    color: var(--main-dark);
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.login-icon:hover {
+    color: var(--main-color);
+}
+/* GiriÅŸ ikonunu saÄŸ tarafa alma */
+
+.login-icon-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-icon-img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+/* ANA BUTONLAR */
+
+.btn-primary,
+.main-btn {
+    background-color: var(--main-color) !important;
+    border-color: var(--main-color) !important;
+}
+
+.btn-primary:hover,
+.main-btn:hover {
+    background-color: var(--main-dark) !important;
+    border-color: var(--main-dark) !important;
+}
+
+/* KARTLAR */
+
+.card,
+.item-card {
+    border-radius: 18px;
+    border: none;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+
+/* MINT TEMA DÃœZENLEMELERÄ° */
+
+:root {
+    --mint: #6fcdbb;
+    --mint-dark: #3f9f8e;
+    --mint-soft: #eaf8f5;
+}
+
+/* Sayfa arka planÄ±na uygun gÃ¶rsel + soft renk */
+body {
+    background:
+        linear-gradient(rgba(234, 248, 245, 0.88), rgba(234, 248, 245, 0.88)),
+        url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* BaÅŸlÄ±k rengi */
+h1,
+.hero-title {
+    color: var(--mint-dark) !important;
+    font-weight: 800 !important;
+}
+
+/* Hero alt yazÄ±sÄ± */
+.hero-section p,
+.hero-text {
+    color: #2f5f57 !important;
+    font-weight: 700 !important;
+    font-size: 20px;
+}
+
+/* Arama butonu */
+.btn-primary,
+button[type="submit"],
+.search-btn {
+    background-color: var(--mint) !important;
+    border-color: var(--mint) !important;
+    color: white !important;
+}
+
+.btn-primary:hover,
+button[type="submit"]:hover,
+.search-btn:hover {
+    background-color: var(--mint-dark) !important;
+    border-color: var(--mint-dark) !important;
+}
+
+/* Kirala butonu */
+.btn-danger,
+.kirala-btn {
+    background-color: var(--mint) !important;
+    border-color: var(--mint) !important;
+    color: white !important;
+}
+
+.btn-danger:hover,
+.kirala-btn:hover {
+    background-color: var(--mint-dark) !important;
+    border-color: var(--mint-dark) !important;
+}
+
+/* TÃ¼m Kategoriler butonu */
+.category-nav .nav-link.active,
+.nav-pills .nav-link.active,
+.btn.active,
+.btn-primary {
+    background-color: var(--mint) !important;
+    border-color: var(--mint) !important;
+    color: white !important;
+}
+
+/* ÃœrÃ¼n kartlarÄ±nÄ±n mavi arka planÄ±nÄ± beyaz yap */
+.card,
+.item-card {
+    background-color: white !important;
+}
+
+/* Kart Ã¼stÃ¼ndeki mavi gÃ¶rsel alanÄ±nÄ± beyaz yap */
+.card-img-top,
+.item-image,
+.card-header,
+.product-image-area,
+.ilan-image-area {
+    background-color: white !important;
+}
+
+/* Kart iÃ§inde kalan mavi alan varsa */
+.card div,
+.item-card div {
+    background-color: white;
+}
+
+/* Fiyat yazÄ±sÄ± */
+.price-text,
+.item-price {
+    color: #000000 !important;
+    font-weight: bold;
+}
+
+/* Detay butonu */
+.card .btn-outline-primary,
+.item-card .btn-outline-primary {
+    color: var(--mint-dark) !important;
+    border-color: var(--mint) !important;
+}
+
+.card .btn-outline-primary:hover,
+.item-card .btn-outline-primary:hover {
+    background-color: var(--mint) !important;
+    color: white !important;
+}
+
+/* Logo */
+.navbar-brand,
+.logo-text,
+h2.text-primary {
+    color: var(--mint-dark) !important;
+}
+
+/* Ãœst kategori yazÄ±larÄ± */
+.category-nav .nav-link {
+    color: #2f5f57 !important;
+    font-weight: 600;
+}
+
+/* TÃœM FIYAT YAZILARI */
+
+.item-price,
+.price-text,
+.card-price,
+.card-body h5,
+.card-body h4,
+.card-body h3,
+
+.card-body p strong {
+    color: #111111 !important;
+    font-weight: 800 !important;
+}
+
+/* Kart Ã¼rÃ¼n isimleri */
+
+.card-title {
+    font-size: 28px !important;
+    font-weight: 500 !important;
+    color: #1f2937;
+}
+
+
+/* DETAY SAYFASI */
+
+.detail-card {
+    background: white;
+    border-radius: 30px;
+    padding: 50px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    margin-bottom: 50px;
+}
+
+.detail-image {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.detail-category {
+    background: #dff7f1;
+    color: #3f9f8e;
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.detail-title {
+    font-size: 60px;
+    font-weight: 900;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.detail-price {
+    font-size: 42px;
+    font-weight: 900;
+    color: #111;
+    margin-bottom: 25px;
+}
+
+.detail-text {
+    font-size: 22px;
+    color: #6b7280;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.detail-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 20px;
+    color: #374151;
+    font-weight: 600;
+}
+
+.detail-btn {
+    background: #4fa392;
+    color: white;
+    padding: 16px 40px;
+    border-radius: 15px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.detail-btn:hover {
+    background: #3a8c7d;
+    color: white;
 }

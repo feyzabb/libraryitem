@@ -2,14 +2,11 @@
 
 namespace Library_Item.Controllers
 {
-    public class ItemController : Controller
+    public class ItemsController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Details(int id)
         {
-            return View();
-        }
-        public IActionResult Create()
-        {
+            ViewBag.ItemId = id;
             return View();
         }
     }

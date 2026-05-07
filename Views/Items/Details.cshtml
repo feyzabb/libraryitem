@@ -1,0 +1,165 @@
+﻿@{
+    ViewData["Title"] = "Ürün Detayı";
+    int id = ViewBag.ItemId;
+}
+
+<div class="container py-5">
+
+@if (id == 1)
+{
+    <div class="detail-card">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-6 text-center">
+
+                <img src="https://tse4.mm.bing.net/th/id/OIP.k-43T6LNjZTHbEMe1XYT_gHaE1?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                     class="detail-image" />
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <span class="detail-category">
+                    Sanat
+                </span>
+
+                <h1 class="detail-title">
+                    Keman
+                </h1>
+
+                <h2 class="detail-price">
+                    350 ₺ / Günlük
+                </h2>
+
+                <p class="detail-text">
+                    Profesyonel kullanıma uygun kaliteli keman.
+                    Konser, eğitim ve günlük kullanım için idealdir.
+                </p>
+
+                <div class="detail-info">
+
+                    <div>📍 İstanbul</div>
+                    <div>⭐ 4.9 Puan</div>
+                    <div>🚚 Ücretsiz Kargo</div>
+
+                </div>
+
+                <button class="btn detail-btn mt-4">
+                    Hemen Kirala
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+}
+
+else if (id == 2)
+{
+    <div class="detail-card">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-6 text-center">
+
+                <img src="https://tse2.mm.bing.net/th/id/OIP._s6McSK8Dwd_samx3TTg3AHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                     class="detail-image" />
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <span class="detail-category">
+                    Bahçe
+                </span>
+
+                <h1 class="detail-title">
+                    Çim Biçme Makinesi
+                </h1>
+
+                <h2 class="detail-price">
+                    700 ₺ / Günlük
+                </h2>
+
+                <p class="detail-text">
+                    Güçlü motorlu çim biçme makinesi.
+                    Bahçe bakımı için pratik kullanım sağlar.
+                </p>
+
+                <div class="detail-info">
+
+                    <div>📍 Ankara</div>
+                    <div>⭐ 4.8 Puan</div>
+                    <div>🔋 Elektrikli</div>
+
+                </div>
+
+                <button class="btn detail-btn mt-4">
+                    Hemen Kirala
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+}
+
+else if (id == 3)
+{
+    <div class="detail-card">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-6 text-center">
+
+                <img src="https://tse2.mm.bing.net/th/id/OIP.PIItuXnJ2SMWMrgUCAU7cwHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                     class="detail-image" />
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <span class="detail-category">
+                    Elektronik
+                </span>
+
+                <h1 class="detail-title">
+                    Matkap
+                </h1>
+
+                <h2 class="detail-price">
+                    250 ₺ / Günlük
+                </h2>
+
+                <p class="detail-text">
+                    Ev ve tamirat işleri için güçlü matkap seti.
+                    Profesyonel kullanıma uygundur.
+                </p>
+
+                <div class="detail-info">
+
+                    <div>📍 İzmir</div>
+                    <div>⭐ 4.7 Puan</div>
+                    <div>🛠 Profesyonel Set</div>
+
+                </div>
+
+                <a asp-controller="Account"
+                     asp-action="Basket"
+                    class="btn detail-btn mt-4">
+
+                     Hemen Kirala
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+}
+
+</div>

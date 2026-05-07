@@ -1,0 +1,33 @@
+/Users/feyza/Desktop/libraryitem/bin/Debug/net8.0/appsettings.json
+/Users/feyza/Desktop/libraryitem/bin/Debug/net8.0/Library Item.staticwebassets.runtime.json
+/Users/feyza/Desktop/libraryitem/bin/Debug/net8.0/Library Item.staticwebassets.endpoints.json
+/Users/feyza/Desktop/libraryitem/bin/Debug/net8.0/Library Item
+/Users/feyza/Desktop/libraryitem/bin/Debug/net8.0/Library Item.deps.json
+/Users/feyza/Desktop/libraryitem/bin/Debug/net8.0/Library Item.runtimeconfig.json
+/Users/feyza/Desktop/libraryitem/bin/Debug/net8.0/Library Item.dll
+/Users/feyza/Desktop/libraryitem/bin/Debug/net8.0/Library Item.pdb
+/Users/feyza/Desktop/libraryitem/obj/Debug/net8.0/rpswa.dswa.cache.json
+/Users/feyza/Desktop/libraryitem/obj/Debug/net8.0/Library Item.GeneratedMSBuildEditorConfig.editorconfig
+/Users/feyza/Desktop/libraryitem/obj/Debug/net8.0/Library Item.AssemblyInfoInputs.cache
+/Users/feyza/Desktop/libraryitem/obj/Debug/net8.0/Library Item.AssemblyInfo.cs
+/Users/feyza/Desktop/libraryitem/obj/Debug/net8.0/Library Item.csproj.CoreCompileInputs.cache
+/Users/feyza/Desktop/libraryitem/obj/Debug/net8.0/Library Item.MvcApplicationPartsAssemblyInfo.cache
+/Users/feyza/Desktop/libraryitem/obj/Debug/net8.0/Library Item.RazorAssemblyInfo.cache
+/Users/feyza/Desktop/libraryitem/obj/Debug/net8.0/Library Item.RazorAssemblyInfo.cs
+/Users/feyza/Desktop/libraryitem/obj/Debug/net8.0/Library Item.sourcelink.json
+/Users/feyza/Desktop/libraryitem/obj/Debug/net8.0/rjimswa.dswa.cache.json
+/Users/feyza/Desktop/libraryitem/obj/Debug/net8.0/rjsmrazor.dswa.cache.json
+/Users/feyza/Desktop/libraryitem/obj/Debug/net8.0/rjsmcshtml.dswa.cache.json
+/Users/feyza/Desktop/libraryitem/obj/Debug/net8.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
+/Users/feyza/Desktop/libraryitem/obj/Debug/net8.0/scopedcss/bundle/Library Item.styles.css
+/Users/feyza/Desktop/libraryitem/obj/Debug/net8.0/scopedcss/projectbundle/Library Item.bundle.scp.css
+/Users/feyza/Desktop/libraryitem/obj/Debug/net8.0/staticwebassets.build.json
+/Users/feyza/Desktop/libraryitem/obj/Debug/net8.0/staticwebassets.build.json.cache
+/Users/feyza/Desktop/libraryitem/obj/Debug/net8.0/staticwebassets.development.json
+/Users/feyza/Desktop/libraryitem/obj/Debug/net8.0/staticwebassets.build.endpoints.json
+/Users/feyza/Desktop/libraryitem/obj/Debug/net8.0/swae.build.ex.cache
+/Users/feyza/Desktop/libraryitem/obj/Debug/net8.0/Library Item.dll
+/Users/feyza/Desktop/libraryitem/obj/Debug/net8.0/refint/Library Item.dll
+/Users/feyza/Desktop/libraryitem/obj/Debug/net8.0/Library Item.pdb
+/Users/feyza/Desktop/libraryitem/obj/Debug/net8.0/Library Item.genruntimeconfig.cache
+/Users/feyza/Desktop/libraryitem/obj/Debug/net8.0/ref/Library Item.dll
