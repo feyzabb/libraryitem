@@ -1,32 +1,46 @@
-using System.Diagnostics;
-using Library_Item.Models;
 using Microsoft.AspNetCore.Mvc;
+using Library_Item.Models;
+using System.Linq;
 
 namespace Library_Item.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly AppDbContext _context;
 
-        public HomeController(ILogger<HomeController> logger)
+        // Veri tabanýný tanýyan constructor
+        public HomeController(AppDbContext context)
         {
-            _logger = logger;
+            _context = context;
         }
 
-        public IActionResult Index()
+        // Ana sayfa ve kategorilerin can damarý olan metot
+        public IActionResult Index(string category, string searchString)
         {
-            return View();
+            // Veri tabanýndaki ilanlarý çekiyoruz
+            var ilanlar = _context.Items.AsQueryable();
+
+            // Eðer üstten veya soldan bir kategoriye týklandýysa filtrele
+            if (!string.IsNullOrEmpty(category))
+            {
+                ilanlar = ilanlar.Where(x => x.Category == category);
+                ViewBag.SelectedCategory = category;
+            }
+
+            // Eðer arama kutusuna bir þey yazýldýysa filtrele
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                ilanlar = ilanlar.Where(s => s.Title.Contains(searchString) || s.Description.Contains(searchString));
+                ViewData["CurrentFilter"] = searchString;
+            }
+
+            // Gitarlarý ve kemanlarý HTML sayfana paketleyip gönderiyoruz
+            return View(ilanlar.ToList());
         }
 
         public IActionResult Privacy()
         {
             return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
 }

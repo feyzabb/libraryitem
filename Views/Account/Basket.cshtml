@@ -1,23 +1,53 @@
-﻿@{
-    ViewData["Title"] = "Sepetim";
+﻿@model Library_Item.Models.Item
+
+@{
+    ViewData["Title"] = "Kiralama Onayı";
 }
 
-<div class="container py-5">
+<div class="container mt-5" style="max-width: 700px;">
+    <div class="card shadow-sm p-4 text-center" style="border-radius: 15px; border: none; background: #fff;">
 
-    <div class="bg-white shadow rounded-4 p-5 text-center">
+        @if (Model != null)
+        {
+            <h3 class="fw-bold text-dark mb-2">Kiralama Talebi Onayı</h3>
+            <p class="text-muted small mb-4">Lütfen bilgilerinizi kontrol edin ve talebinizi onaylayın.</p>
+            <hr />
 
-        <h1 class="fw-bold mb-4">
-            Sepetim
-        </h1>
+            <div class="d-flex align-items-center justify-content-between p-3 mb-3 bg-light rounded" style="border: 1px solid #dee2e6;">
+                <div class="d-flex align-items-center gap-3">
+                    <img src="@Model.ImageUrl" alt="@Model.Title" class="rounded" style="width: 70px; height: 70px; object-fit: cover;" />
+                    <div class="text-start">
+                        <h5 class="fw-bold m-0 text-dark">@Model.Title</h5>
+                        <small class="text-muted">Kategori: @Model.Category</small>
+                    </div>
+                </div>
+                <div class="text-end">
+                    <span class="fw-bold text-success fs-5">@Model.Price.ToString("C")</span>
+                    <p class="text-muted small m-0">/ Günlük</p>
+                </div>
+            </div>
 
-        <p class="fs-4 text-secondary">
-            Seçtiğiniz ürün kiralama sepetine eklendi.
-        </p>
+            <div class="text-start p-3 mb-4 bg-light rounded" style="border: 1px solid #dee2e6;">
+                <h6 class="fw-bold text-secondary mb-2"><i class="bi bi-person-lines-fill me-1"></i> İletişim Bilgileri</h6>
+                <div class="small">
+                    <span class="text-muted">Bildirilen Telefon:</span>
+                    <strong class="text-dark">@ViewBag.CustomerPhone</strong>
+                </div>
+            </div>
 
-        <button class="btn detail-btn mt-4">
-            Ödemeye Geç
-        </button>
-
+            <form asp-controller="Account" asp-action="ConfirmOrder" method="post">
+                <button type="submit" class="btn btn-danger w-100 py-2 fw-bold rounded-pill shadow-sm">
+                    <i class="bi bi-check-circle-fill me-1"></i> Kiralama Talebini Onayla
+                </button>
+            </form>
+        }
+        else
+        {
+            <div class="py-5">
+                <i class="bi bi-cart-x text-muted" style="font-size: 3rem;"></i>
+                <p class="text-muted mt-3">Sepetinizde onaylanacak bir kiralama talebi bulunmamaktadır.</p>
+                <a asp-controller="Home" asp-action="Index" class="btn btn-outline-danger btn-sm rounded-pill px-4 mt-2">İlanlara Göz At</a>
+            </div>
+        }
     </div>
-
 </div>

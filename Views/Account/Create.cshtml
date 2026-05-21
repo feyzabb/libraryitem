@@ -1,43 +1,48 @@
-﻿
-@{
-	ViewData["Title"] = "Yeni İlan Ekle";
+﻿@{
+    ViewData["Title"] = "Yeni İlan Ekle";
 }
 <div class="container mt-5">
-   <h1>Yeni İlan Ekle</h1>
-   <p>Kiraya vermek istediğiniz ürünün bilgilerini giriniz</p>
-	   <form asp-action="Create" method="post" enctype="multipart/form-data">
+    <h1>Yeni İlan Ekle</h1>
+    <p>Kiraya vermek istediğiniz ürünün bilgilerini giriniz</p>
 
-	  <div class="form-group">
+    <form asp-action="Create" method="post" enctype="multipart/form-data">
 
-   <div class="mb-3">
+        <div class="form-group">
+            <div class="mb-3">
+                <label>Ürün Adı</label>
+                <input type="text" name="Title" class="form-control" placeholder="Ürün İsmi" required />
+            </div>
 
-	   <label>Ürün Adı</label>
-	 <input type="text" name="Name" class="form-control" placeholder="Ürün İsmi" required />
-	    </div>
+            <div class="mb-3">
+                <label>Açıklama</label>
+                <input type="text" name="Description" class="form-control" placeholder="Ürün açıklaması" />
+            </div>
 
-		<div class="mb-3"> 
-		<label>Acıklama </label>
-		<textarea name="Description" class="form-control" placeholder="Ürün açıklaması"></textarea>
-		</div>
+            <div class="mb-3">
+                <label>Kategori</label>
+                <select name="Category" class="form-control">
+                    <option value="Ev Eşyası">Ev Eşyası</option>
+                    <option value="Elektronik">Elektronik</option>
+                    <option value="Bahçe">Bahçe</option>
+                </select>
+            </div>
 
-		<select name="CategoryId" class="form-control mb-3">
-			<option value ="1">Ev Eşyası</option>
-			<option value="2">Elektronik</option>
-			<option value="3">Kadın</option>
-		</select>
-		<div class="mb-3">
-			<label>Günlük Ücret</label>
-			<input type="number" name="GünlükÜcret" class="form-contol" placeholder="Günlük Ücret" requried />
-		</div>
-		<button type="submit" class=btn btn-primary>İlan Ekle</button>
-		<a asp-controller="Home" asp-action="Index" class="btn btn-secondary">Geri Dön</a>
+            <div class="mb-3">
+                <label>Günlük Ücret</label>
+                <input type="number" name="Price" class="form-control" placeholder="Günlük Ücret" required />
+            </div>
 
+            <div class="mb-3">
+                <label class="fw-bold small mb-1 text-muted">Ürün Fotoğrafı Seç</label>
+                <input type="file" name="ImageFile" class="form-control" accept="image/*" required />
+            </div>
 
+            <button type="submit" class="btn btn-success">İlanı Yayınla</button>
+            <a asp-controller="Home" asp-action="Index" class="btn btn-secondary">Geri Dön</a>
+        </div>
 
-		</form>
-		</div>
-		
-	  </div>
+    </form>
+</div>
 		
 
 

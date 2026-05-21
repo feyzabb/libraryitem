@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "/Users/feyza/Desktop/libraryitem/Library Item.csproj": {}
+    "C:\\Users\\LENOVO\\Desktop\\baks\\Library Item.csproj": {}
   },
   "projects": {
-    "/Users/feyza/Desktop/libraryitem/Library Item.csproj": {
+    "C:\\Users\\LENOVO\\Desktop\\baks\\Library Item.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/feyza/Desktop/libraryitem/Library Item.csproj",
+        "projectUniqueName": "C:\\Users\\LENOVO\\Desktop\\baks\\Library Item.csproj",
         "projectName": "Library Item",
-        "projectPath": "/Users/feyza/Desktop/libraryitem/Library Item.csproj",
-        "packagesPath": "/Users/feyza/.nuget/packages/",
-        "outputPath": "/Users/feyza/Desktop/libraryitem/obj/",
+        "projectPath": "C:\\Users\\LENOVO\\Desktop\\baks\\Library Item.csproj",
+        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\LENOVO\\Desktop\\baks\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/feyza/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -38,11 +44,29 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.12, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -62,7 +86,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

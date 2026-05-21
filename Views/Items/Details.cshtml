@@ -1,165 +1,164 @@
-﻿@{
-    ViewData["Title"] = "Ürün Detayı";
-    int id = ViewBag.ItemId;
+﻿@model Library_Item.Models.Item
+
+@{
+    ViewData["Title"] = Model.Title;
 }
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="~/css/site.css" />
 
 <div class="container py-5">
 
-@if (id == 1)
-{
-    <div class="detail-card">
-
-        <div class="row align-items-center">
-
-            <div class="col-lg-6 text-center">
-
-                <img src="https://tse4.mm.bing.net/th/id/OIP.k-43T6LNjZTHbEMe1XYT_gHaE1?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
-                     class="detail-image" />
-
-            </div>
-
-            <div class="col-lg-6">
-
-                <span class="detail-category">
-                    Sanat
-                </span>
-
-                <h1 class="detail-title">
-                    Keman
-                </h1>
-
-                <h2 class="detail-price">
-                    350 ₺ / Günlük
-                </h2>
-
-                <p class="detail-text">
-                    Profesyonel kullanıma uygun kaliteli keman.
-                    Konser, eğitim ve günlük kullanım için idealdir.
-                </p>
-
-                <div class="detail-info">
-
-                    <div>📍 İstanbul</div>
-                    <div>⭐ 4.9 Puan</div>
-                    <div>🚚 Ücretsiz Kargo</div>
-
-                </div>
-
-                <button class="btn detail-btn mt-4">
-                    Hemen Kirala
-                </button>
-
-            </div>
-
+    @if (TempData["KiralamaMesaji"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show fw-bold text-center mb-4 shadow-sm" role="alert" style="border-radius: 12px;">
+            <i class="bi bi-check-circle-fill me-2"></i>@TempData["KiralamaMesaji"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
+    }
 
-    </div>
-}
+  
 
-else if (id == 2)
-{
     <div class="detail-card">
-
         <div class="row align-items-center">
 
             <div class="col-lg-6 text-center">
+                @if (!string.IsNullOrEmpty(Model.ImageUrl) && Model.ImageUrl.StartsWith("/images/"))
+                {
+                    <img src="@Model.ImageUrl" class="detail-image" alt="@Model.Title" />
+                }
+                else if (Model.Title.Contains("Keman"))
+                {
+                    <img src="https://cangozmuzik.com.tr/uploads/p/p/Almira-CNM4010-44-Mat-Cilali-Keman_3.jpg?v=1757845978" class="detail-image" alt="Keman" />
+                }
+                else if (Model.Title.Contains("Gitar"))
+                {
+                    <img src="https://img.pzrmcdn.com/mnresize/1180/1182/asset/241366475e323e10dc/images/klaskgtar44kirmizisunburstsapelkl-1.png" class="detail-image" alt="Gitar" />
+                }
+                else if (Model.Title.Contains("Matkap"))
+                {
+                    <img src="https://n11scdn.akamaized.net/a1/450/05/52/68/18/IMG-7934978969519530665.jpg" class="detail-image" alt="Matkap" />
+                }
+                else if (Model.Title.Contains("Çim Biçme") || Model.Title.Contains("Cim") || Model.Title.Contains("Çim"))
+                {
+                    <img src="https://n11scdn.akamaized.net/a1/640/04/11/58/82/IMG-6304899434929946275.jpg" class="detail-image" alt="Çim Biçme" />
+                }
+                else if (Model.Title.Contains("Kahve"))
+                {
+                    <img src="https://m.media-amazon.com/images/I/71h45+o70NL._AC_SL1500_.jpg" class="detail-image" alt="Kahve Makinesi" />
+                }
+                else if (Model != null && (Model.Title.Contains("Süpürge") || Model.Title.Contains("Supurge") || Model.Title.Contains("Şarjlı")))
+                {
+                    <img src="https://n11scdn.akamaized.net/a1/602_857/03/35/77/76/IMG-4169381347187988562.jpg" class="detail-image" alt="Dikey Şarjlı Süpürge" />
+                }
+                else if (Model.Title.Contains("Grafik Tablet") || Model.Title.Contains("Grafik") || Model.Title.Contains("Tablet"))
+                {
+                    <img src="https://cdn.cimri.io/image/1200x1200/veikk-s640-6-inc-8192-levels-5080lpi-grafik-tabletkalem_279171788.jpg" class="detail-image" alt="Grafik Tablet" />
+                }
+                else if (Model.Title.Contains("PlayStation") || Model.Title.Contains("Play") || Model.Title.Contains("Station"))
+                {
+                    <img src="https://image.made-in-china.com/2f0j00jnTqeRDEvYpH/High-Speed-for-Playstation-5-Slim-Video-Game-Console.webp" class="detail-image" alt="PlayStation" />
+                }
+                else if (Model.Title.Contains("Kulaklık") || Model.Title.Contains("Kulak") || Model.Title.Contains("Kula"))
+                {
+                    <img src="https://cdn.dsmcdn.com/mnresize/1200/1800/ty187/product/media/images/20211002/17/138876713/84210036/1/1_org_zoom.jpg" class="detail-image" alt="Kulaklık" />
+                }
+                else if (Model.Title.Contains("Heykel") || Model.Title.Contains("Heykel") || Model.Title.Contains("Hekel"))
+                {
+                    <img src="https://cdn.dsmcdn.com/ty1636/prod/QC/20250214/13/6528560b-9c2b-3ebc-8262-0db6e6e1e569/1_org_zoom.jpg" class="detail-image" alt="Heykel" />
+                }
+                else if (Model.Title.Contains("Masa") || Model.Title.Contains("Masa") || Model.Title.Contains("Mas"))
+                {
+                    <img src="https://www.panohane.com/img/products/small/pan913_07.07.2019_70cf640.jpg" class="detail-image" alt="Masa" />
+                }
+                else if (Model.Title.Contains("Drone") || Model.Title.Contains("drone") || Model.Title.Contains("Drone'u"))
+                {
+                    <img src="https://sc04.alicdn.com/kf/Hc5e50c6532334a6590f41832babf3af9J/V14--Mini-Drone-Quadcopter-6k-Drone-120-Wide-Angle-Drones-Smart-Hover.jpg" class="detail-image" alt="Drone" />
+                }
+                else if (Model.Title.Contains("Kamera") || Model.Title.Contains("Kamera") || Model.Title.Contains("Aksiyon"))
+                {
+                    <img src="https://image.made-in-china.com/2f0j00YDMCtmlWCPoc/D11-Mini-Camera-48MP-HD-Video-DSLR-Style-64G-Card-Black.jpg" class="detail-image" alt="Kamera" />
+                }
+                else if (Model.Title.Contains("Projektör") || Model.Title.Contains("Projektör") || Model.Title.Contains("Projek"))
+                {
+                    <img src="https://productimages.hepsiburada.net/s/777/424-600/110001115422147.jpg" class="detail-image" alt="Projektör" />
+                }
+                else if (Model.Title.Contains("Şövale") || Model.Title.Contains("Tuval") || Model.Title.Contains("Sova"))
+                {
+                    <img src="https://static.ticimax.cloud/35066/Uploads/UrunResimleri/buyuk/larte-atolye-sovalye-lrt-216-b6ed.jpg" class="detail-image" alt="Şövalye Heykeli" />
+                }
+                else if (Model.Title.Contains("Ütü") || Model.Title.Contains("Utu") || Model.Title.Contains("Ütü"))
+                {
+                    <img src="https://cdn.karaca.com/rcman/cw695h695q90gm/image/000001000006652003/homend-jetsteam-1173h-buhar-kazanli-utu-mor-siyah-000001000006652003-19.jpg" class="detail-image" alt="Buharlı Ütü" />
+                }
+                else if (Model.Title.Contains("Buharlı"))
+                {
+                    <img src="https://n11scdn.akamaized.net/a1/450/elektronik/diger/fakir-2in1-professional-cok-amacli-steam-mop-buharli-temizleyici__1140777381653413.jpg" class="detail-image" alt="Buharlı Temizleyici" />
+                }
+                else if (Model.Title.Contains("Hava") || Model.Title.Contains("Hava") || Model.Title.Contains("Hav"))
+                {
+                    <img src="https://cdn.dsmcdn.com/ty1672/prod/QC/20250430/18/56572aa3-56d8-3380-8015-a9973ea36ce2/1_org_zoom.jpg" class="detail-image" alt="Hava Temizleyici" />
+                }
+                else if (Model.Title.Contains("Halı") || Model.Title.Contains("Koltuk") || Model.Title.Contains("Hal"))
+                {
+                    <img src="https://s1.kaercher-media.com/images/pim/fe4fc580-9650-447e-816d-60b73083d22a.jpg" class="detail-image" alt="Halı" />
+                }
+                else if (Model.Title.Contains("Oto Yıkama") || Model.Title.Contains("Basınçlı") || Model.Title.Contains("Yıkama"))
+                {
+                    <img src="https://cdn.dsmcdn.com/ty1681/prod/QC/20250518/17/18876da2-d0a2-34d7-a3a0-5b3a55af86c9/1_org_zoom.jpg" class="detail-image" alt="Oto Yıkama" />
+                }
+                else if (Model.Title.Contains("Budama") || Model.Title.Contains("Budama") || Model.Title.Contains("Budam"))
+                {
+                    <img src="https://sc04.alicdn.com/kf/Hab85aa7b8cf8435f86ad2f455cb51f156/Super-Powerful-Brushless-Lithium-Battery-Cordless-Hedge-Trimmer-Rechargeable-Light-Weight-Hand-Held-Horticulture-Pruning-Tool.jpg" class="detail-image" alt="Budama Makinesi" />
+                }
+                else if (Model.Title.Contains("Testere") || Model.Title.Contains("Testere") || Model.Title.Contains("Test"))
+                {
+                    <img src="https://prohummer.com/image/catalog/product/prohummer-ph217-25cm-portatif-mini-benzinli-dal-kesme-agac-motoru.jpg" class="detail-image" alt="Testere" />
+				}
+                else if (Model.Title.Contains("Hortum"))
+                {
+                    <img src="https://avatars.mds.yandex.net/i?id=9cbae4b481c700380e7bb4ad62543b112fa2e7d1-5282884-images-thumbs&n=13" class="detail-image" alt="Bahçe Hortumu" />
+                }
+                else if (Model.Title.Contains("Barbekü") || Model.Title.Contains("Mangal") || Model.Title.Contains("Barbe"))
+                {
+                    <img src="https://cdn.dsmcdn.com/ty1797/prod/QC_ENRICHMENT/20251207/22/66b3ace3-10b3-3744-b200-e2c4de298191/1_org_zoom.jpg" class="detail-image" alt="Barbekü" />
+				}
 
-                <img src="https://tse2.mm.bing.net/th/id/OIP._s6McSK8Dwd_samx3TTg3AHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
-                     class="detail-image" />
-
+                else
+                {
+                    // Eğer yukarıdakilerden biri değilse varsayılan bir genel ürün resmi koyar
+                    <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=500&auto=format&fit=crop" class="detail-image" alt="Ürün" />
+                }
             </div>
 
             <div class="col-lg-6">
-
-                <span class="detail-category">
-                    Bahçe
-                </span>
-
-                <h1 class="detail-title">
-                    Çim Biçme Makinesi
-                </h1>
-
-                <h2 class="detail-price">
-                    700 ₺ / Günlük
-                </h2>
-
-                <p class="detail-text">
-                    Güçlü motorlu çim biçme makinesi.
-                    Bahçe bakımı için pratik kullanım sağlar.
-                </p>
+                <span class="detail-category">@Model.Category</span>
+                <h1 class="detail-title">@Model.Title</h1>
+                <h2 class="detail-price">@Model.Price ₺ / Günlük</h2>
+                <p class="detail-text">@Model.Description</p>
 
                 <div class="detail-info">
-
-                    <div>📍 Ankara</div>
+                    <div>📍 Konum: Belirtilmemiş</div>
                     <div>⭐ 4.8 Puan</div>
-                    <div>🔋 Elektrikli</div>
-
+                    <div>🛡 Güvenli Kiralama</div>
                 </div>
-
-                <button class="btn detail-btn mt-4">
-                    Hemen Kirala
-                </button>
-
-            </div>
-
-        </div>
+                <form asp-controller="Account" asp-action="AddToBasket" method="post" class="mt-4 bg-light p-3 rounded shadow-sm" style="max-width: 350px;">
+                    <input type="hidden" name="itemId" value="@Model.Id" />
+                    <div class="mb-2">
+                        <label class="form-label small fw-bold text-muted">Telefon Numaranız</label>
+                        <input type="tel" name="customerPhone" class="form-control form-control-sm" placeholder="05xx xxx xx xx" required />
+                    </div>
+                    <button type="submit" class="btn detail-btn w-100 mt-2">
+                        <i class="bi bi-key-fill me-1"></i> Hemen Kirala
+                    </button>
+                </form>
+           
+    </div>
+    </<div>
 
     </div>
-}
-
-else if (id == 3)
-{
-    <div class="detail-card">
-
-        <div class="row align-items-center">
-
-            <div class="col-lg-6 text-center">
-
-                <img src="https://tse2.mm.bing.net/th/id/OIP.PIItuXnJ2SMWMrgUCAU7cwHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
-                     class="detail-image" />
-
-            </div>
-
-            <div class="col-lg-6">
-
-                <span class="detail-category">
-                    Elektronik
-                </span>
-
-                <h1 class="detail-title">
-                    Matkap
-                </h1>
-
-                <h2 class="detail-price">
-                    250 ₺ / Günlük
-                </h2>
-
-                <p class="detail-text">
-                    Ev ve tamirat işleri için güçlü matkap seti.
-                    Profesyonel kullanıma uygundur.
-                </p>
-
-                <div class="detail-info">
-
-                    <div>📍 İzmir</div>
-                    <div>⭐ 4.7 Puan</div>
-                    <div>🛠 Profesyonel Set</div>
-
-                </div>
-
-                <a asp-controller="Account"
-                     asp-action="Basket"
-                    class="btn detail-btn mt-4">
-
-                     Hemen Kirala
-
-                </a>
-
-            </div>
-
-        </div>
-
     </div>
-}
 
-</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

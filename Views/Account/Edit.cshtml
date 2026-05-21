@@ -1,0 +1,53 @@
+﻿@model Library_Item.Models.Item
+
+@{
+    ViewData["Title"] = "İlanı Güncelle";
+}
+
+<div class="container mt-5" style="max-width: 600px;">
+    <div class="card shadow-sm p-4" style="border-radius: 15px;">
+        <h2 class="fw-bold mb-3 text-primary">İlanı Güncelle</h2>
+        <p class="text-muted small">Ürünün değiştirmek istediğiniz bilgilerini düzenleyin.</p>
+        <hr />
+
+        <form asp-action="Edit" method="post" enctype="multipart/form-data">
+            <input type="hidden" asp-for="Id" />
+
+            <div class="mb-3">
+                <label class="form-label fw-bold small text-muted">Ürün Adı</label>
+                <input type="text" name="Title" class="form-control" value="@Model.Title" required />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label fw-bold small text-muted">Açıklama</label>
+                <textarea name="Description" class="form-control" rows="3">@Model.Description</textarea>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label fw-bold small text-muted">Kategori</label>
+                <select name="Category" class="form-control">
+                    <option value="Ev Eşyası" selected="@(Model.Category == "Ev Eşyası")">Ev Eşyası</option>
+                    <option value="Elektronik" selected="@(Model.Category == "Elektronik")">Elektronik</option>
+                    <option value="Sanat" selected="@(Model.Category == "Sanat")">Sanat</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label fw-bold small text-muted">Günlük Kira Ücreti (₺)</label>
+                <input type="number" name="Price" class="form-control" value="@Model.Price" required />
+            </div>
+
+            <div class="mb-4">
+                <label class="form-label fw-bold small text-muted">Ürün Fotoğrafını Değiştir (İsteğe Bağlı)</label>
+                <input type="file" name="ImageFile" class="form-control" accept="image/*" />
+            </div>
+
+            <div class="d-flex gap-2">
+                <button type="submit" class="btn btn-primary w-100" style="border-radius: 8px;">
+                    <i class="bi bi-save-fill me-1"></i> Değişiklikleri Kaydet
+                </button>
+                <a asp-controller="Home" asp-action="Index" class="btn btn-secondary w-50" style="border-radius: 8px;">İptal</a>
+            </div>
+        </form>
+    </div>
+</div>

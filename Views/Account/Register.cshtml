@@ -1,15 +1,19 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿
 @{
     ViewData["Title"] = "Üye Ol";
+}
+@if (ViewBag.HataMesaji != null)
+{
+    <div class="alert alert-danger text-center small py-2">
+        @ViewBag.HataMesaji
+    </div>
 }
 <link rel="stylesheet" href="~/css/site.css" />
 <div class="register-form-internal">
     <form asp-controller="Account" asp-action="Register" method="post">
         <div class="form-group mb-3 text-start">
-            <label class="fw-bold small">Ad Soyad</label>
-            <input type="text" name="FullName" class="form-control rounded-pill bg-light" placeholder="Adınızı girin" required />
+            <label class="fw-bold small">Ad Soyad / Kullanıcı Adı</label>
+            <input type="text" name="Username" class="form-control rounded-pill bg-light" placeholder="Adınızı girin" required />
         </div>
 
         <div class="form-group mb-3 text-start">

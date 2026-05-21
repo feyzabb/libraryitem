@@ -1,26 +1,42 @@
-﻿@{
-    Layout = null;
+﻿@model Library_Item.Models.LoginViewModel
+
+@{
+    ViewData["Title"] = "Giriş Yap";
+}
+@if (ViewBag.HataMesaji != null)
+{
+    <div class="alert alert-danger text-center small py-2">
+        @ViewBag.HataMesaji
+    </div>
 }
 
-<div class="register-form-internal">
-    <form asp-controller="Account" asp-action="Register" method="post">
-        <div class="form-group mb-3 text-start">
-            <label class="fw-bold small">Ad Soyad</label>
-            <input type="text" name="FullName" class="form-control rounded-pill bg-light" placeholder="Adınızı girin" required />
+<div class="container mt-5" style="max-width: 450px;">
+    <div class="card shadow p-4" style="border-radius: 15px;">
+        <h3 class="fw-bold text-center text-primary mb-3">Tekrar Hoş Geldiniz</h3>
+        <p class="text-muted text-center small mb-4">Sisteme erişmek için bilgilerinizi giriniz.</p>
+
+        <form asp-action="Login" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger small mb-3"></div>
+
+            <div class="mb-3">
+                <label class="form-label small fw-bold text-muted">E-posta Adresi</label>
+                <input asp-for="Email" class="form-control" placeholder="ornek@ilan.com" required />
+                <span asp-validation-for="Email" class="text-danger small"></span>
+            </div>
+
+            <div class="mb-4">
+                <label class="form-label small fw-bold text-muted">Şifre</label>
+                <input asp-for="Password" class="form-control" type="password" placeholder="••••••••" required />
+                <span asp-validation-for="Password" class="text-danger small"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100 py-2 fw-bold" style="border-radius: 8px;">
+                <i class="bi bi-box-arrow-in-right me-1"></i> Giriş Yap
+            </button>
+        </form>
+
+        <div class="text-center mt-3">
+            <span class="text-muted small">Test Hesabı: admin@ilan.com / 123456</span>
         </div>
-
-
-        <div class="form-group mb-4 text-start">
-            <label class="fw-bold small">Şifre</label>
-            <input type="password" name="Password" class="form-control rounded-pill bg-light" placeholder="Şifrenizi girin" required />
-        </div>
-
-        <button type="submit" class="btn btn-danger w-100 rounded-pill py-2 fw-bold shadow-sm">Giriş Yap</button>
-    </form>
-</div>
-<div class="register-link mt-3 text-center">
-    <p>
-        Üye değilseniz
-        <a href="#" data-bs-toggle="modal" data-bs-target="#registerModal" data-bs-dismiss="modal">Üye Ol</a>
-    </p>
+    </div>
 </div>
