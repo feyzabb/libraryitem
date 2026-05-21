@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\LENOVO\\Desktop\\baks\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{DF25BF27-4C15-41E0-9B9A-E68AAA4F0BF3}|Library Item.csproj|c:\\users\\lenovo\\desktop\\baks\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF25BF27-4C15-41E0-9B9A-E68AAA4F0BF3}|Library Item.csproj|solutionrelative:models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DF25BF27-4C15-41E0-9B9A-E68AAA4F0BF3}|Library Item.csproj|c:\\users\\lenovo\\desktop\\baks\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DF25BF27-4C15-41E0-9B9A-E68AAA4F0BF3}|Library Item.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -33,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{DF25BF27-4C15-41E0-9B9A-E68AAA4F0BF3}|Library Item.csproj|c:\\users\\lenovo\\desktop\\baks\\views\\account\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DF25BF27-4C15-41E0-9B9A-E68AAA4F0BF3}|Library Item.csproj|solutionrelative:views\\account\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\Desktop\\baks\\Migrations\\20260519183755_AddUserIdToItems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20260519183755_AddUserIdToItems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DF25BF27-4C15-41E0-9B9A-E68AAA4F0BF3}|Library Item.csproj|c:\\users\\lenovo\\desktop\\baks\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -71,20 +71,12 @@
       "RelativeMoniker": "D:0:0:{DF25BF27-4C15-41E0-9B9A-E68AAA4F0BF3}|Library Item.csproj|solutionrelative:views\\account\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\Desktop\\baks\\Migrations\\20260519180457_AddUsersTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20260519180457_AddUsersTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DF25BF27-4C15-41E0-9B9A-E68AAA4F0BF3}|Library Item.csproj|c:\\users\\lenovo\\desktop\\baks\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DF25BF27-4C15-41E0-9B9A-E68AAA4F0BF3}|Library Item.csproj|solutionrelative:views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DF25BF27-4C15-41E0-9B9A-E68AAA4F0BF3}|Library Item.csproj|c:\\users\\lenovo\\desktop\\baks\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DF25BF27-4C15-41E0-9B9A-E68AAA4F0BF3}|Library Item.csproj|solutionrelative:models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF25BF27-4C15-41E0-9B9A-E68AAA4F0BF3}|Library Item.csproj|c:\\users\\lenovo\\desktop\\baks\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF25BF27-4C15-41E0-9B9A-E68AAA4F0BF3}|Library Item.csproj|solutionrelative:models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DF25BF27-4C15-41E0-9B9A-E68AAA4F0BF3}|Library Item.csproj|c:\\users\\lenovo\\desktop\\baks\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -157,6 +149,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{DF25BF27-4C15-41E0-9B9A-E68AAA4F0BF3}|Library Item.csproj|c:\\users\\lenovo\\desktop\\baks\\migrations\\20260518203741_herkategoriyealtiurun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DF25BF27-4C15-41E0-9B9A-E68AAA4F0BF3}|Library Item.csproj|solutionrelative:migrations\\20260518203741_herkategoriyealtiurun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF25BF27-4C15-41E0-9B9A-E68AAA4F0BF3}|Library Item.csproj|c:\\users\\lenovo\\desktop\\baks\\migrations\\20260519183755_adduseridtoitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF25BF27-4C15-41E0-9B9A-E68AAA4F0BF3}|Library Item.csproj|solutionrelative:migrations\\20260519183755_adduseridtoitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF25BF27-4C15-41E0-9B9A-E68AAA4F0BF3}|Library Item.csproj|c:\\users\\lenovo\\desktop\\baks\\migrations\\20260519180457_adduserstable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF25BF27-4C15-41E0-9B9A-E68AAA4F0BF3}|Library Item.csproj|solutionrelative:migrations\\20260519180457_adduserstable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -166,15 +166,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 9,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\baks\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
@@ -182,12 +178,11 @@
               "RelativeToolTip": "wwwroot\\css\\site.css",
               "ViewState": "AgIAAJgBAAAAAAAAAAAIwL0BAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-05-19T20:37:46.823Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-19T20:37:46.823Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\baks\\Views\\Items\\Details.cshtml",
               "RelativeDocumentMoniker": "Views\\Items\\Details.cshtml",
@@ -195,12 +190,11 @@
               "RelativeToolTip": "Views\\Items\\Details.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-18T20:55:10.437Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-18T20:55:10.437Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\baks\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
@@ -208,12 +202,11 @@
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAE8AAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-18T18:13:14.673Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-18T18:13:14.673Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\baks\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
@@ -221,25 +214,23 @@
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
               "ViewState": "AgIAADwAAAAAAAAAAAAiwFAAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-19T13:05:35.114Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-19T13:05:35.114Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\baks\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
               "ToolTip": "C:\\Users\\LENOVO\\Desktop\\baks\\Controllers\\AccountController.cs",
               "RelativeToolTip": "Controllers\\AccountController.cs",
-              "ViewState": "AgIAABABAAAAAAAAAAAcwDkBAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkBAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-18T20:09:32.283Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-18T20:09:32.283Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 37,
               "Title": "20260519183755_AddUserIdToItems.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\baks\\Migrations\\20260519183755_AddUserIdToItems.cs",
               "RelativeDocumentMoniker": "Migrations\\20260519183755_AddUserIdToItems.cs",
@@ -247,12 +238,11 @@
               "RelativeToolTip": "Migrations\\20260519183755_AddUserIdToItems.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-19T18:37:55.284Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-19T18:37:55.284Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "MyItems.cshtml",
               "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\baks\\Views\\Account\\MyItems.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\MyItems.cshtml",
@@ -260,12 +250,11 @@
               "RelativeToolTip": "Views\\Account\\MyItems.cshtml",
               "ViewState": "AgIAACEAAAAAAAAAAAAAABQAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-19T19:56:18.211Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-19T19:56:18.211Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "AddItem.cshtml",
               "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\baks\\Views\\Account\\AddItem.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\AddItem.cshtml",
@@ -273,12 +262,11 @@
               "RelativeToolTip": "Views\\Account\\AddItem.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-19T20:05:16.57Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-19T20:05:16.57Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\baks\\Views\\Account\\Edit.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\Edit.cshtml",
@@ -286,8 +274,24 @@
               "RelativeToolTip": "Views\\Account\\Edit.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-19T17:14:28.259Z",
+              "WhenOpened": "2026-05-19T17:14:28.259Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\baks\\Models\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Models\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\baks\\Models\\AppDbContext.cs",
+              "RelativeToolTip": "Models\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-18T18:48:10.718Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
             },
             {
               "$type": "Document",
@@ -299,8 +303,7 @@
               "RelativeToolTip": "Views\\Account\\OrderSuccess.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-19T18:22:01.72Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-19T18:22:01.72Z"
             },
             {
               "$type": "Document",
@@ -312,8 +315,7 @@
               "RelativeToolTip": "Views\\Account\\Register.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-19T17:35:50.674Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-19T17:35:50.674Z"
             },
             {
               "$type": "Document",
@@ -325,8 +327,7 @@
               "RelativeToolTip": "Controllers\\ItemController.cs",
               "ViewState": "AgIAAB0AAAAAAAAAAAAswDAAAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-18T18:11:39.216Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-18T18:11:39.216Z"
             },
             {
               "$type": "Document",
@@ -338,8 +339,7 @@
               "RelativeToolTip": "Models\\Item.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAAwB0AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-18T18:46:29.681Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-18T18:46:29.681Z"
             },
             {
               "$type": "Document",
@@ -351,8 +351,7 @@
               "RelativeToolTip": "Views\\Account\\Basket.cshtml",
               "ViewState": "AgIAABUAAAAAAAAAAAAAACEAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-18T18:09:17.806Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-18T18:09:17.806Z"
             },
             {
               "$type": "Document",
@@ -364,8 +363,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABkAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-18T18:49:42.852Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-18T18:49:42.852Z"
             },
             {
               "$type": "Document",
@@ -377,12 +375,11 @@
               "RelativeToolTip": "Controllers\\HomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-18T18:11:42.729Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-18T18:11:42.729Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 19,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\baks\\Models\\User.cs",
               "RelativeDocumentMoniker": "Models\\User.cs",
@@ -390,12 +387,11 @@
               "RelativeToolTip": "Models\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-19T17:34:21.659Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-19T17:34:21.659Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 38,
               "Title": "20260519180457_AddUsersTable.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\baks\\Migrations\\20260519180457_AddUsersTable.cs",
               "RelativeDocumentMoniker": "Migrations\\20260519180457_AddUsersTable.cs",
@@ -403,8 +399,7 @@
               "RelativeToolTip": "Migrations\\20260519180457_AddUsersTable.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-19T18:04:57.961Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-19T18:04:57.961Z"
             },
             {
               "$type": "Document",
@@ -416,12 +411,11 @@
               "RelativeToolTip": "Views\\Account\\site.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-05-19T18:07:14.965Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-19T18:07:14.965Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 18,
               "Title": "LoginViewModel.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\baks\\Models\\LoginViewModel.cs",
               "RelativeDocumentMoniker": "Models\\LoginViewModel.cs",
@@ -429,25 +423,11 @@
               "RelativeToolTip": "Models\\LoginViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-19T17:25:53.975Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-19T17:25:53.975Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\baks\\Models\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Models\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\baks\\Models\\AppDbContext.cs",
-              "RelativeToolTip": "Models\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-18T18:48:10.718Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 17,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\baks\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\Login.cshtml",
@@ -455,12 +435,11 @@
               "RelativeToolTip": "Views\\Account\\Login.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-18T18:16:16.568Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-18T18:16:16.568Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 20,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\baks\\Views\\Account\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\Create.cshtml",
@@ -468,12 +447,11 @@
               "RelativeToolTip": "Views\\Account\\Create.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-18T18:09:20.915Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-18T18:09:20.915Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 22,
               "Title": "20260519144630_SonVeritaban\u0131E\u015Fitleme.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\baks\\Migrations\\20260519144630_SonVeritaban\u0131E\u015Fitleme.cs",
               "RelativeDocumentMoniker": "Migrations\\20260519144630_SonVeritaban\u0131E\u015Fitleme.cs",
@@ -481,12 +459,11 @@
               "RelativeToolTip": "Migrations\\20260519144630_SonVeritaban\u0131E\u015Fitleme.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-19T14:46:30.211Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-19T14:46:30.211Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 21,
               "Title": "20260518211303_RentalTableEklendi.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\baks\\Migrations\\20260518211303_RentalTableEklendi.cs",
               "RelativeDocumentMoniker": "Migrations\\20260518211303_RentalTableEklendi.cs",
@@ -494,12 +471,11 @@
               "RelativeToolTip": "Migrations\\20260518211303_RentalTableEklendi.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAwwAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-18T21:13:03.939Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-18T21:13:03.939Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 23,
               "Title": "20260518190524_IlkKurulum.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\baks\\Migrations\\20260518190524_IlkKurulum.cs",
               "RelativeDocumentMoniker": "Migrations\\20260518190524_IlkKurulum.cs",
@@ -507,12 +483,11 @@
               "RelativeToolTip": "Migrations\\20260518190524_IlkKurulum.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-18T19:05:27.009Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-18T19:05:27.009Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 24,
               "Title": "20260519143539_AddImageUrlField.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\baks\\Migrations\\20260519143539_AddImageUrlField.cs",
               "RelativeDocumentMoniker": "Migrations\\20260519143539_AddImageUrlField.cs",
@@ -520,12 +495,11 @@
               "RelativeToolTip": "Migrations\\20260519143539_AddImageUrlField.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-19T14:35:39.929Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-19T14:35:39.929Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 25,
               "Title": "SeedData.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\baks\\Models\\SeedData.cs",
               "RelativeDocumentMoniker": "Models\\SeedData.cs",
@@ -533,12 +507,11 @@
               "RelativeToolTip": "Models\\SeedData.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAC/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-18T19:12:11.641Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-18T19:12:11.641Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 27,
               "Title": "RentalRequest.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\baks\\Models\\RentalRequest.cs",
               "RelativeDocumentMoniker": "Models\\RentalRequest.cs",
@@ -546,12 +519,11 @@
               "RelativeToolTip": "Models\\RentalRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-18T21:10:08.33Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-18T21:10:08.33Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 26,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\baks\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -559,12 +531,11 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-05-18T18:48:54.344Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-18T18:48:54.344Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 28,
               "Title": "_Layout.cshtml.css",
               "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\baks\\Views\\Shared\\_Layout.cshtml.css",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml.css",
@@ -572,12 +543,11 @@
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-05-19T11:49:27.982Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-19T11:49:27.982Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 29,
               "Title": "RentalSuccess.cshtml",
               "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\baks\\Views\\Items\\RentalSuccess.cshtml",
               "RelativeDocumentMoniker": "Views\\Items\\RentalSuccess.cshtml",
@@ -585,12 +555,11 @@
               "RelativeToolTip": "Views\\Items\\RentalSuccess.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-19T11:27:46.393Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-19T11:27:46.393Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 30,
               "Title": "Error.cshtml",
               "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\baks\\Views\\Shared\\Error.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\Error.cshtml",
@@ -598,12 +567,11 @@
               "RelativeToolTip": "Views\\Shared\\Error.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-18T21:42:10.955Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-18T21:42:10.955Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 35,
               "Title": "20260518213833_KiralamaSistemiEklendi.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\baks\\Migrations\\20260518213833_KiralamaSistemiEklendi.cs",
               "RelativeDocumentMoniker": "Migrations\\20260518213833_KiralamaSistemiEklendi.cs",
@@ -611,12 +579,11 @@
               "RelativeToolTip": "Migrations\\20260518213833_KiralamaSistemiEklendi.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-18T21:38:33.551Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-18T21:38:33.551Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 32,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\baks\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
@@ -624,12 +591,11 @@
               "RelativeToolTip": "Views\\_ViewStart.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-18T21:24:13.52Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-18T21:24:13.52Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 31,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\baks\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
@@ -637,12 +603,11 @@
               "RelativeToolTip": "Views\\_ViewImports.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-18T21:24:13.289Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-18T21:24:13.289Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 36,
               "Title": "20260518203741_HerKategoriyeAltiUrun.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\baks\\Migrations\\20260518203741_HerKategoriyeAltiUrun.cs",
               "RelativeDocumentMoniker": "Migrations\\20260518203741_HerKategoriyeAltiUrun.cs",
@@ -650,12 +615,11 @@
               "RelativeToolTip": "Migrations\\20260518203741_HerKategoriyeAltiUrun.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-18T20:37:42.451Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-18T20:37:42.451Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 33,
               "Title": "Privacy.cshtml",
               "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\baks\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
@@ -663,12 +627,11 @@
               "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-18T18:07:13.17Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-18T18:07:13.17Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 34,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\baks\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
@@ -676,8 +639,7 @@
               "RelativeToolTip": "Models\\ErrorViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-18T18:11:37.607Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-18T18:11:37.607Z"
             }
           ]
         }
