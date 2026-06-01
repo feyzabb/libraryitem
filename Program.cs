@@ -2,12 +2,13 @@
 
 var builder = WebApplication.CreateBuilder(args);
 
-// VERİ TABANI BAĞLANTISINI TAM VE EKSİKSİZ TANITIYORUZ
+// 🚨 VERİ TABANI BAĞLANTISINI SQLITE KULLANACAK ŞEKİLDE GÜNCELLEDİK
 builder.Services.AddDbContext<Library_Item.Models.AppDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
 // 1. Çerez tabanlı giriş yapma servisini projeye ekliyoruz
 builder.Services.AddAuthentication(Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(options =>
@@ -15,6 +16,7 @@ builder.Services.AddAuthentication(Microsoft.AspNetCore.Authentication.Cookies.C
         options.LoginPath = "/Account/Login"; // Giriş yapmayan biri kısıtlı yere girmeye çalışırsa buraya şutlanacak
         options.ExpireTimeSpan = TimeSpan.FromDays(7); // Kullanıcı 7 gün boyunca girişli kalsın
     });
+    
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
 {
@@ -45,10 +47,10 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+
 app.UseAuthentication(); // 🚨 BU SATIRI EKLE (Authorization'ın hemen üstünde olmalı)
 app.UseAuthorization();
 
-app.UseAuthorization();
 app.UseSession(); // 🚨 Session'ı aktif hale getiriyoruz
 
 app.MapControllerRoute(
