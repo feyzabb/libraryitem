@@ -2,35 +2,9 @@
 <link rel="stylesheet" href="~/css/site.css" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom stick-top">
+<div class="bg-transparent border-0 mb-4">
     <div class="container">
-        <a class="navbar-brand fw-bold fs-3 d-flex align-items-center gap-2" href="/">
-            <img src="~/images/logo.png" alt="KiralaBunu" style="height: 45px; width: auto;" asp-append-version="true" />
-            <span style="color: #46bfa3;">KiralaBunu</span>
-        </a>
-
-        <div class="d-flex align-items-center gap-3">
-            <button type="button" class="btn btn-outline-secondary rounded-pill px-3 fw-bold btn-sm" data-bs-toggle="modal" data-bs-target="#loginModal">
-                <i class="bi bi-person-circle me-1"></i> Giriş Yap
-            </button>
-
-            <a class="nav-link" href="/Account/Basket">
-                <img src="https://static.vecteezy.com/system/resources/previews/010/576/702/original/basket-icon-logo-illustration-shopping-basket-symbol-template-for-graphic-and-web-design-collection-free-vector.jpg"
-                     alt="Kirala"
-                     style="width: 45px; height: 45px;">
-            </a>
-
-            <button class="btn text-white rounded-pill px-4 fw-bold shadow-sm" style="background-color: #46bfa3; border-color: #46bfa3;" data-bs-toggle="modal" data-bs-target="#mülkEkleModal">
-                <i class="bi bi-plus-circle-fill me-1"></i>
-                Kirala
-            </button>
-        </div>
-    </div>
-</nav>
-
-<div class="bg-white border-bottom shadow-sm">
-    <div class="container">
-        <ul class="nav category-nav d-flex justify-content-between py-2">
+        <ul class="nav category-nav d-flex justify-content-center flex-wrap gap-2 py-2">
             <li class="nav-item">
                 <a class="nav-link @(string.IsNullOrEmpty(ViewBag.SelectedCategory) ? "active" : "")"
                    asp-controller="Home" asp-action="Index">Tüm Kategoriler</a>
@@ -55,7 +29,7 @@
     </div>
 </div>
 
-<section class="hero-section text-center py-5 bg-light">
+<section class="hero-section text-center py-5" style="background: #ffffff;">
     <div class="container">
         <h1 class="display-4 mb-3">KiralaBunu'ya Hoş Geldiniz!</h1>
         <p class="lead mb-4">Eşyalarınızı paylaşarak kazanın, ihtiyacınız olanı kiralayarak tasarruf edin.</p>
@@ -63,33 +37,33 @@
         <form asp-controller="Home" asp-action="Index" method="get" class="search-bar mx-auto" style="max-width: 700px">
             <div class="input-group shadow-sm">
                 <input type="text" name="searchString" class="form-control" placeholder="İlan, Kategori, Konum ara..." value="@ViewData["CurrentFilter"]" />
-                <button type="submit" class="btn btn-primary px-4" style="background-color: #46bfa3; border-color: #46bfa3;">Ara</button>
+                <button type="submit" class="btn btn-primary px-4">Ara</button>
             </div>
         </form>
     </div>
 </section>
-<div class="bg-light py-5 my-4 rounded-4 shadow-sm">
+<div class="py-5 my-4 rounded-4 shadow-sm" style="background: #ffffff; border: 1px solid #f1f5f9;">
     <div class="container text-center">
-        <h4 class="fw-bold mb-4 text-dark">KiralaBunu Nasıl Çalışır?</h4>
+        <h4 class="fw-bold mb-4" style="color: var(--dark);">KiralaBunu Nasıl Çalışır?</h4>
         <div class="row">
             <div class="col-md-4 mb-3">
-                <div class="bg-white p-3 rounded-3 shadow-sm h-100 border-0">
-                    <i class="bi bi-search text-success fs-2"></i>
-                    <h6 class="fw-bold mt-2">1. İhtiyacını Bul</h6>
+                <div class="p-4 rounded-3 h-100 border-0" style="background: #f8fafc; border: 1px solid #e2e8f0 !important;">
+                    <i class="bi bi-search fs-2" style="color: var(--primary);"></i>
+                    <h6 class="fw-bold mt-3" style="color: var(--dark);">1. İhtiyacını Bul</h6>
                     <p class="text-muted small mb-0">Binlerce ürün arasından sana en yakın olanı seç.</p>
                 </div>
             </div>
             <div class="col-md-4 mb-3">
-                <div class="bg-white p-3 rounded-3 shadow-sm h-100 border-0">
-                    <i class="bi bi-calendar-check text-success fs-2"></i>
-                    <h6 class="fw-bold mt-2">2. Sahibiyle Anlaş</h6>
+                <div class="p-4 rounded-3 h-100 border-0" style="background: #f8fafc; border: 1px solid #e2e8f0 !important;">
+                    <i class="bi bi-calendar-check fs-2" style="color: var(--primary);"></i>
+                    <h6 class="fw-bold mt-3" style="color: var(--dark);">2. Sahibiyle Anlaş</h6>
                     <p class="text-muted small mb-0">Formu doldur, ilan sahibiyle hemen iletişime geç.</p>
                 </div>
             </div>
             <div class="col-md-4 mb-3">
-                <div class="bg-white p-3 rounded-3 shadow-sm h-100 border-0">
-                    <i class="bi bi-wallet2 text-success fs-2"></i>
-                    <h6 class="fw-bold mt-2">3. Tasarruf Et & Kazan</h6>
+                <div class="p-4 rounded-3 h-100 border-0" style="background: #f8fafc; border: 1px solid #e2e8f0 !important;">
+                    <i class="bi bi-wallet2 fs-2" style="color: var(--primary);"></i>
+                    <h6 class="fw-bold mt-3" style="color: var(--dark);">3. Tasarruf Et &amp; Kazan</h6>
                     <p class="text-muted small mb-0">Satın almak yerine kirala, paranı cebinde tut!</p>
                 </div>
             </div>
@@ -280,92 +254,3 @@ else if (ilan.Title.Contains("Barbekü") || ilan.Title.Contains("Mangal"))
         </div>
     </div>
 </div>
-
-<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" style="max-width: 380px;">
-        <div class="modal-content border-0 shadow-lg" style="border-radius: 20px;">
-            <div class="modal-header border-0 pb-0 justify-content-between align-items-center">
-                <div class="w-100 text-center ps-4">
-                    <h4 class="modal-title fw-bold text-dark pt-3" id="loginModalLabel">Giriş Yap</h4>
-                </div>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body px-4 pt-4">
-                <form asp-controller="Account" asp-action="Login" method="post">
-                    <div class="form-group mb-3 text-start">
-                        <label class="fw-bold small mb-1 text-muted">E-posta Adresi</label>
-                        <input type="email" name="Email" class="form-control rounded-pill bg-light border-0 py-2 px-3" placeholder="E-postanızı girin" required />
-                    </div>
-                    <div class="form-group mb-4 text-start">
-                        <label class="fw-bold small mb-1 text-muted">Şifre</label>
-                        <input type="password" name="Password" class="form-control rounded-pill bg-light border-0 py-2 px-3" placeholder="Şifrenizi girin" required />
-                    </div>
-                    <button type="submit" class="btn btn-danger w-100 rounded-pill py-2 fw-bold shadow-sm">
-                        Giriş Yap
-                    </button>
-                </form>
-                <div class="register-link mt-4 mb-3 text-center small">
-                    <p class="text-muted mb-0">
-                        Üye değilseniz
-                        <a href="Account/Register" class="text-danger fw-bold text-decoration-none ms-1">Üye Ol</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="modal fade" id="mülkEkleModal" tabindex="-1" aria-labelledby="mülkEkleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" style="max-width: 500px;">
-        <div class="modal-content border-0 shadow-lg" style="border-radius: 24px;">
-
-            <div class="modal-header border-0 pb-0 justify-content-between align-items-center">
-                <div class="w-100 text-center ps-4">
-                    <h4 class="modal-title fw-bold text-dark pt-3" id="mülkEkleModalLabel">Eşyanı Kiraya Ver</h4>
-                    <p class="text-muted small mb-0">Paylaşarak kazanmaya hemen başla.</p>
-                </div>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-
-            <div class="modal-body px-4 pt-4 pb-4">
-                <form asp-controller="Items" asp-action="Create" method="post">
-
-                    <div class="form-group mb-3 text-start">
-                        <label class="fw-bold small mb-1 text-muted">Eşya / İlan Başlığı</label>
-                        <input type="text" name="Title" class="form-control rounded-3 bg-light border-0 py-2 px-3" placeholder="Örn: Profesyonel Keman, Şarjlı Süpürge" required />
-                    </div>
-
-                    <div class="form-group mb-3 text-start">
-                        <label class="fw-bold small mb-1 text-muted">Kategori</label>
-                        <select name="Category" class="form-select rounded-3 bg-light border-0 py-2 px-3" required>
-                            <option value="Sanat">Sanat</option>
-                            <option value="Elektronik">Elektronik</option>
-                            <option value="Ev">Ev Eşyası</option>
-                            <option value="Bahce">Bahçe</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group mb-3 text-start">
-                        <label class="fw-bold small mb-1 text-muted">Günlük Kiralama Bedeli (₺)</label>
-                        <div class="input-group">
-                            <input type="number" name="Price" class="form-control rounded-start-3 bg-light border-0 py-2 px-3" placeholder="150" min="1" required />
-                            <span class="input-group-text bg-secondary-subtle border-0 fw-bold">₺ / Gün</span>
-                        </div>
-                    </div>
-
-                    <div class="form-group mb-4 text-start">
-                        <label class="fw-bold small mb-1 text-muted">Eşyanın Durumu ve Açıklaması</label>
-                        <textarea name="Description" class="form-control rounded-3 bg-light border-0 py-2 px-3" rows="3" placeholder="Eşyanızın durumu, yanında verilecek aparatlar vb..." required></textarea>
-                    </div>
-
-                    <button type="submit" class="btn text-white w-100 rounded-pill py-2.5 fw-bold shadow-sm" style="background-color: #46bfa3; border-color: #46bfa3;">
-                        <i class="bi bi-check-circle-fill me-1"></i> İlanı Yayınla
-                    </button>
-                </form>
-            </div>
-
-        </div>
-    </div>
-</div>
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
