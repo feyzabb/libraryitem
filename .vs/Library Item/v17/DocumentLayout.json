@@ -166,32 +166,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\baks\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\baks\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "wwwroot\\css\\site.css",
-              "ViewState": "AgIAAJgBAAAAAAAAAAAIwL0BAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-05-19T20:37:46.823Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\baks\\Views\\Items\\Details.cshtml",
-              "RelativeDocumentMoniker": "Views\\Items\\Details.cshtml",
-              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\baks\\Views\\Items\\Details.cshtml",
-              "RelativeToolTip": "Views\\Items\\Details.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-18T20:55:10.437Z"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 3,
@@ -227,6 +203,43 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADkBAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-18T20:09:32.283Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\baks\\Models\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Models\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\baks\\Models\\AppDbContext.cs",
+              "RelativeToolTip": "Models\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-18T18:48:10.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\baks\\Views\\Items\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Items\\Details.cshtml",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\baks\\Views\\Items\\Details.cshtml",
+              "RelativeToolTip": "Views\\Items\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-18T20:55:10.437Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\baks\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\baks\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAAJgBAAAAAAAAAAAIwL0BAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-05-19T20:37:46.823Z"
             },
             {
               "$type": "Document",
@@ -275,19 +288,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-05-19T17:14:28.259Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\baks\\Models\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Models\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\baks\\Models\\AppDbContext.cs",
-              "RelativeToolTip": "Models\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-18T18:48:10.718Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
