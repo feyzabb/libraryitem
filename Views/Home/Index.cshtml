@@ -129,116 +129,14 @@
                 {
                     <div class="col-md-4 mb-4">
                         <div class="card shadow-sm h-100">
-                            @if (!string.IsNullOrEmpty(ilan.ImageUrl) && ilan.ImageUrl.StartsWith("/images/"))
+                            @if (!string.IsNullOrEmpty(ilan.ImageUrl))
                             {
                                 <img src="@ilan.ImageUrl" class="card-img-top" alt="@ilan.Title" style="height: 200px; object-fit: cover;">
                             }
-
-                            else if (ilan.Title.Contains("Keman"))
-                            {
-                                <img src="https://cangozmuzik.com.tr/uploads/p/p/Almira-CNM4010-44-Mat-Cilali-Keman_3.jpg?v=1757845978" class="card-img-top" alt="Keman" style="height: 200px; object-fit: cover;">
-                            }
-else if (ilan.Title.Contains("Gitar"))
-{
-           <img src="https://img.pzrmcdn.com/mnresize/1180/1182/asset/241366475e323e10dc/images/klaskgtar44kirmizisunburstsapelkl-1.png" class="card-img-top" alt="Gitar" style="height: 200px; object-fit: cover;">
-}
-else if (ilan.Title.Contains("Şövale") || ilan.Title.Contains("Tuval"))
-{
-             <img src="https://static.ticimax.cloud/35066/Uploads/UrunResimleri/buyuk/larte-atolye-sovalye-lrt-216-b6ed.jpg" class="card-img-top" alt="Şövale" style="height: 200px; object-fit: cover;">
-}
-else if (ilan.Title.Contains("Tablet"))
-{
-        <img src="https://cdn.cimri.io/image/1200x1200/veikk-s640-6-inc-8192-levels-5080lpi-grafik-tabletkalem_279171788.jpg" class="card-img-top" alt="Grafik Tablet" style="height: 200px; object-fit: cover;">
-}
-else if (ilan.Title.Contains("Kaligrafi") || ilan.Title.Contains("Masa"))
-{
-        <img src="https://www.panohane.com/img/products/small/pan913_07.07.2019_70cf640.jpg" class="card-img-top" alt="Işıklı Masa" style="height: 200px; object-fit: cover;">
-}
-else if (ilan.Title.Contains("Kil") || ilan.Title.Contains("Heykel"))
-{
-        <img src="https://cdn.dsmcdn.com/ty1636/prod/QC/20250214/13/6528560b-9c2b-3ebc-8262-0db6e6e1e569/1_org_zoom.jpg" class="card-img-top" alt="Heykel Seti" style="height: 200px; object-fit: cover;">
-}
-else if (ilan.Title.Contains("Matkap"))
-{
-          <img src="https://n11scdn.akamaized.net/a1/450/05/52/68/18/IMG-7934978969519530665.jpg" class="card-img-top" alt="Matkap" style="height: 200px; object-fit: cover;">
-}
- else if (ilan.Title.Contains("Drone") || ilan.Title.Contains("drone") || ilan.Title.Contains("Drone'u"))
-  {
-       <img src="https://sc04.alicdn.com/kf/Hc5e50c6532334a6590f41832babf3af9J/V14--Mini-Drone-Quadcopter-6k-Drone-120-Wide-Angle-Drones-Smart-Hover.jpg" class="card-img-top" alt="Drone" style="height: 200px; object-fit: cover;">
- }
-    else if (ilan.Title.Contains("Kamera") || ilan.Title.Contains("Kamera") || ilan.Title.Contains("Aksiyon"))
-{
-       <img src="https://image.made-in-china.com/2f0j00YDMCtmlWCPoc/D11-Mini-Camera-48MP-HD-Video-DSLR-Style-64G-Card-Black.jpg" class="card-img-top" alt="Aksiyon Kamerası" style="height: 200px; object-fit: cover;">
-}
-else if (ilan.Title.Contains("Kulaklık"))
-{
-       <img src="https://cdn.dsmcdn.com/mnresize/1200/1800/ty187/product/media/images/20211002/17/138876713/84210036/1/1_org_zoom.jpg" class="card-img-top" alt="Kulaklık" style="height: 200px; object-fit: cover;">
-}
-else if (ilan.Title.Contains("Projeksiyon"))
-{
-          <img src="https://productimages.hepsiburada.net/s/777/424-600/110001115422147.jpg" class="card-img-top" alt="Projeksiyon" style="height: 200px; object-fit: cover;">
-}
-
-else if (ilan.Title.Contains("PlayStation") || ilan.Title.Contains("Konsol"))
-{
-    <img src="https://image.made-in-china.com/2f0j00jnTqeRDEvYpH/High-Speed-for-Playstation-5-Slim-Video-Game-Console.webp" class="card-img-top" alt="Oyun Konsolu" style="height: 200px; object-fit: cover;">
-}
-else if (ilan.Title.Contains("Süpürge"))
-{
-         <img src="https://n11scdn.akamaized.net/a1/602_857/03/35/77/76/IMG-4169381347187988562.jpg" class="card-img-top" alt="Şarjlı Süpürge" style="height: 200px; object-fit: cover;">
-}
-
-else if (ilan.Title.Contains("Kahve"))
-{
-        <img src="https://img.pzrmcdn.com/mnresize/1180/1182/asset/8690769018488/4491e5e7-38b3-4cfd-9100-08d966dd42bc/arelikk3400krmztelvetrkkahvesimakinesi-1.jpg" class="card-img-top" alt="Kahve Makinesi" style="height: 200px; object-fit: cover;">
-}
-   else if (ilan.Title.Contains("Ütü"))
-     {
-              <img src="https://cdn.karaca.com/rcman/cw695h695q90gm/image/000001000006652003/homend-jetsteam-1173h-buhar-kazanli-utu-mor-siyah-000001000006652003-19.jpg" class="card-img-top" alt="Ütü" style="height: 200px; object-fit: cover;">
-       }
-  else if (ilan.Title.Contains("Buharlı"))
-  {
-      <img src="https://n11scdn.akamaized.net/a1/450/elektronik/diger/fakir-2in1-professional-cok-amacli-steam-mop-buharli-temizleyici__1140777381653413.jpg" class="card-img-top" alt="Buharlı Temizleyici" style="height: 200px; object-fit: cover;">
-     }
-
-else if (ilan.Title.Contains("Hava"))
-{
-   <img src="https://cdn.dsmcdn.com/ty1672/prod/QC/20250430/18/56572aa3-56d8-3380-8015-a9973ea36ce2/1_org_zoom.jpg" class="card-img-top" alt="Hava Temizleyici" style="height: 200px; object-fit: cover;">
-}
-else if (ilan.Title.Contains("Halı") || ilan.Title.Contains("Koltuk"))
-{
-     <img src="https://s1.kaercher-media.com/images/pim/fe4fc580-9650-447e-816d-60b73083d22a.jpg" class="card-img-top" alt="Halı Yıkama" style="height: 200px; object-fit: cover;">
-}
-else if (ilan.Title.Contains("Çim Biçme") || ilan.Title.Contains("Cim") || ilan.Title.Contains("Çim"))
-{
-       <img src="https://n11scdn.akamaized.net/a1/640/04/11/58/82/IMG-6304899434929946275.jpg" class="card-img-top" alt="Çim Biçme" style="height: 200px; object-fit: cover;">
-}
-else if (ilan.Title.Contains("Oto Yıkama") || ilan.Title.Contains("Basınçlı"))
-{
-     <img src="https://cdn.dsmcdn.com/ty1681/prod/QC/20250518/17/18876da2-d0a2-34d7-a3a0-5b3a55af86c9/1_org_zoom.jpg" class="card-img-top" alt="Yıkama Makinesi" style="height: 200px; object-fit: cover;">
-}
-else if (ilan.Title.Contains("Budama"))
-{
-     <img src="https://sc04.alicdn.com/kf/Hab85aa7b8cf8435f86ad2f455cb51f156/Super-Powerful-Brushless-Lithium-Battery-Cordless-Hedge-Trimmer-Rechargeable-Light-Weight-Hand-Held-Horticulture-Pruning-Tool.jpg" class="card-img-top" alt="Budama Makinesi" style="height: 200px; object-fit: cover;">
-}
-else if (ilan.Title.Contains("Testere"))
-{
-        <img src="https://prohummer.com/image/catalog/product/prohummer-ph217-25cm-portatif-mini-benzinli-dal-kesme-agac-motoru.jpg" class="card-img-top" alt="Ağaç Testeresi" style="height: 200px; object-fit: cover;">
-}
-else if (ilan.Title.Contains("Hortum"))
-{
-     <img src="https://avatars.mds.yandex.net/i?id=9cbae4b481c700380e7bb4ad62543b112fa2e7d1-5282884-images-thumbs&n=13" class="card-img-top" alt="Bahçe Hortumu" style="height: 200px; object-fit: cover;">
-}
-else if (ilan.Title.Contains("Barbekü") || ilan.Title.Contains("Mangal"))
-{
-       <img src="https://cdn.dsmcdn.com/ty1797/prod/QC_ENRICHMENT/20251207/22/66b3ace3-10b3-3744-b200-e2c4de298191/1_org_zoom.jpg" class="card-img-top" alt="Barbekü" style="height: 200px; object-fit: cover;">
-                            }
-                            
-
                             else
-{
-    <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=500&auto=format&fit=crop" class="card-img-top" alt="Ürün" style="height: 200px; object-fit: cover;">
-}
+                            {
+                                <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=500&auto=format&fit=crop" class="card-img-top" alt="Ürün" style="height: 200px; object-fit: cover;">
+                            }
 
                             <div class="card-body text-center">
                                 <h5 class="card-title fw-bold">@ilan.Title</h5>

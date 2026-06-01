@@ -1,4 +1,4 @@
-﻿using Library_Item.Models;
+using Library_Item.Models;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -305,7 +305,39 @@ namespace Library_Item.Controllers
                 yeniUrun.UserId = int.Parse(userIdString);
             }
 
-            // Bilgisayar bilgilerini veri tabanına ekliyoruz
+            // Kullanıcı bir görsel dosyası yüklediyse onu sunucuya kaydediyoruz
+            if (yeniUrun.ImageFile != null && yeniUrun.ImageFile.Length > 0)
+            {
+                // Benzersiz bir dosya adı oluşturuyoruz (aynı isimli dosyaların çakışmasını engeller)
+                string benzersizAd = Guid.NewGuid().ToString() + Path.GetExtension(yeniUrun.ImageFile.FileName);
+
+                // Dosyanın kaydedileceği klasör yolu: wwwroot/images/
+                string yuklemeklasoru = Path.Combine(_webHostEnvironment.WebRootPath, "images");
+
+                // Eğer images klasörü yoksa oluşturuyoruz
+                if (!Directory.Exists(yuklemeklasoru))
+                {
+                    Directory.CreateDirectory(yuklemeklasoru);
+                }
+
+                string dosyaYolu = Path.Combine(yuklemeklasoru, benzersizAd);
+
+                // Dosyayı sunucudaki klasöre kaydediyoruz
+                using (var stream = new FileStream(dosyaYolu, FileMode.Create))
+                {
+                    await yeniUrun.ImageFile.CopyToAsync(stream);
+                }
+
+                // Veri tabanına kaydedilecek göreceli yol
+                yeniUrun.ImageUrl = "/images/" + benzersizAd;
+            }
+            else
+            {
+                // Eğer kullanıcı görsel yüklemediyse varsayılan bir görsel atıyoruz
+                yeniUrun.ImageUrl = "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=500&auto=format&fit=crop";
+            }
+
+            // Ürün bilgilerini veri tabanına ekliyoruz
             _context.Items.Add(yeniUrun);
             await _context.SaveChangesAsync();
 

@@ -129,7 +129,7 @@
                 </div>
 
                 <div class="modal-body px-4 pt-4 pb-4">
-                    <form asp-controller="Items" asp-action="Create" method="post">
+                    <form asp-controller="Items" asp-action="Create" method="post" enctype="multipart/form-data">
 
                         <div class="form-group mb-3 text-start">
                             <label class="fw-bold small mb-1 text-muted">Eşya / İlan Başlığı</label>
@@ -152,6 +152,11 @@
                                 <input type="number" name="Price" class="form-control rounded-start-3 bg-light border-0 py-2 px-3" placeholder="150" min="1" required />
                                 <span class="input-group-text bg-secondary-subtle border-0 fw-bold">₺ / Gün</span>
                             </div>
+                        </div>
+
+                        <div class="form-group mb-3 text-start">
+                            <label class="fw-bold small mb-1 text-muted">Ürün Görseli</label>
+                            <input type="file" name="ImageFile" class="form-control rounded-3 bg-light border-0 py-2 px-3" accept="image/*" />
                         </div>
 
                         <div class="form-group mb-4 text-start">

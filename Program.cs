@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore; // KIRMIZI ÇİZGİYİ ÖNLEYEN KRİTİK SATIR
+using Microsoft.EntityFrameworkCore; // KIRMIZI ÇİZGİYİ ÖNLEYEN KRİTİK SATIR
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -33,7 +33,7 @@ var app = builder.Build();
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
-    //Library_Item.Models.SeedData.Initialize(services);
+    Library_Item.Models.SeedData.Initialize(services);
 }
 
 // Configure the HTTP request pipeline.

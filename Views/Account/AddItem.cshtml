@@ -1,4 +1,4 @@
-﻿@model Library_Item.Models.Item
+@model Library_Item.Models.Item
 
 @{
     ViewData["Title"] = "Yeni İlan Ekle";
@@ -9,9 +9,9 @@
         <h3 class="fw-bold text-center text-dark mb-4">
             <i class="bi bi-plus-circle-fill text-success me-2"></i>Kiralık İlanı Ekle
         </h3>
-        <p class="text-muted text-center small mb-4">Kiraya vermek istediğiniz bilgisayar veya ürünün bilgilerini giriniz.</p>
+        <p class="text-muted text-center small mb-4">Kiraya vermek istediğiniz ürünün bilgilerini giriniz.</p>
 
-        <form asp-controller="Account" asp-action="AddItem" method="post">
+        <form asp-controller="Account" asp-action="AddItem" method="post" enctype="multipart/form-data">
 
             <div class="mb-3">
                 <label class="form-label fw-bold text-secondary">İlan Başlığı</label>
@@ -21,9 +21,9 @@
             <div class="mb-3">
                 <label class="form-label fw-bold text-secondary">Kategori</label>
                 <select name="Category" class="form-select" required>
-                    <option value="Elektronik" >Elektronik</option>
-                    <option value="Müzik">Müzik </option>
-                    <option value="Bahçe">Bahçe</option>
+                    <option value="Elektronik">Elektronik</option>
+                    <option value="Sanat">Sanat</option>
+                    <option value="Bahce">Bahçe</option>
                     <option value="Ev">Ev</option>
                     <option value="Diğer">Diğer</option>
                 </select>
@@ -35,14 +35,21 @@
             </div>
 
             <div class="mb-3">
-                <label class="form-label fw-bold text-secondary">Ürün Resim Linki (URL)</label>
-                <input type="text" name="ImageUrl" class="form-control" placeholder="https://... resim adresi" />
-                <span class="text-muted" style="font-size: 0.75rem;">Geçici olarak internetten bulduğunuz bir resim linkini yapıştırabilirsiniz.</span>
+                <label class="form-label fw-bold text-secondary">Ürün Görseli</label>
+                <input type="file" name="ImageFile" id="imageFileInput" class="form-control" accept="image/*" />
+                <span class="text-muted" style="font-size: 0.75rem;">Bilgisayarınızdan veya telefonunuzdan bir fotoğraf seçin.</span>
+                
+                <!-- Görsel Önizleme Alanı -->
+                <div id="imagePreviewContainer" class="mt-3 text-center" style="display: none;">
+                    <img id="imagePreview" src="#" alt="Görsel Önizleme" 
+                         style="max-width: 100%; max-height: 250px; border-radius: 10px; border: 2px solid #e2e8f0; object-fit: cover;" />
+                    <p class="text-muted small mt-1"><i class="bi bi-check-circle-fill text-success me-1"></i>Görsel seçildi</p>
+                </div>
             </div>
 
             <div class="mb-4">
                 <label class="form-label fw-bold text-secondary">Ürün Açıklaması</label>
-                <textarea name="Description" class="form-control" rows="4" placeholder="Bilgisayarın özelliklerini, teslimat şartlarını buraya yazın..." required></textarea>
+                <textarea name="Description" class="form-control" rows="4" placeholder="Ürünün özelliklerini, teslimat şartlarını buraya yazın..." required></textarea>
             </div>
 
             <button type="submit" class="btn btn-success w-100 py-2 rounded-pill fw-bold shadow-sm">
@@ -52,3 +59,23 @@
         </form>
     </div>
 </div>
+
+<!-- Seçilen görselin önizlemesini gösteren JavaScript -->
+<script>
+    document.getElementById('imageFileInput').addEventListener('change', function (event) {
+        var file = event.target.files[0];
+        var previewContainer = document.getElementById('imagePreviewContainer');
+        var previewImage = document.getElementById('imagePreview');
+
+        if (file) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                previewImage.src = e.target.result;
+                previewContainer.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        } else {
+            previewContainer.style.display = 'none';
+        }
+    });
+</script>
