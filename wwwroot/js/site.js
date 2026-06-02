@@ -23,7 +23,36 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // 5. Initialize Kirala Button Auth Check
     initKiralaButtonAuth();
+
+    // 6. Initialize Modal Switching (Giriş Yap ↔ Üye Ol)
+    initModalSwitching();
 });
+
+/* ==========================================================
+   MODAL SWITCHING: Giriş Yap ↔ Üye Ol
+   ========================================================== */
+function initModalSwitching() {
+    const switchBtn = document.getElementById("switch-to-register");
+    if (switchBtn) {
+        switchBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            // Giriş Yap modalını kapat
+            const loginModalEl = document.getElementById("loginModal");
+            if (loginModalEl && window.bootstrap) {
+                const loginModal = bootstrap.Modal.getInstance(loginModalEl) || new bootstrap.Modal(loginModalEl);
+                loginModal.hide();
+            }
+            // Kısa bir bekleme sonra Üye Ol modalını aç
+            setTimeout(() => {
+                const registerModalEl = document.getElementById("registerModal");
+                if (registerModalEl && window.bootstrap) {
+                    const registerModal = new bootstrap.Modal(registerModalEl);
+                    registerModal.show();
+                }
+            }, 350);
+        });
+    }
+}
 
 /* ==========================================================
    1. DINAİK OTURUM YÖNETİMİ (LOGIN STATE UI)
@@ -35,20 +64,14 @@ function initAuthManagement() {
         const isServerAuthenticated = serverAuthEl.getAttribute("data-authenticated") === "true";
         if (isServerAuthenticated) {
             localStorage.setItem("isLoggedIn", "true");
+        } else {
+            // Sunucu oturum açık değilse, localStorage'ı da temizle
+            localStorage.removeItem("isLoggedIn");
         }
     }
 
     // Update UI components according to session state
     updateAuthUI();
-
-    // Intercept login form submission to simulate login state in local storage
-    document.addEventListener("submit", (e) => {
-        const loginForm = e.target.closest("form");
-        if (loginForm && loginForm.action.includes("Login")) {
-            // Set session key in local storage so client-side remembers it
-            localStorage.setItem("isLoggedIn", "true");
-        }
-    });
 }
 
 function updateAuthUI() {
@@ -246,6 +269,9 @@ function initSmoothSPATransitions() {
 
                 // Re-bind Kirala button auth check
                 initKiralaButtonAuth();
+
+                // Re-bind modal switching
+                initModalSwitching();
 
                 // Phase 2: Fade in the new page wrapper smoothly
                 setTimeout(() => {

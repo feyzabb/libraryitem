@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using Library_Item.Models;
+using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
 
 namespace Library_Item.Controllers
 {
@@ -60,9 +62,17 @@ namespace Library_Item.Controllers
         {
             return View();
         }
+        [Authorize]
         [HttpPost]
         public IActionResult Create(Item yeniUrun)
         {
+            // Giriş yapan kullanıcının ID'sini ilana bağlıyoruz
+            var userIdString = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (!string.IsNullOrEmpty(userIdString))
+            {
+                yeniUrun.UserId = int.Parse(userIdString);
+            }
+
             if (yeniUrun.ImageFile != null)
             {
                 // Benzersiz bir dosya adı oluşturuyoruz (örn: f47ac10b-resim.jpg)
@@ -80,6 +90,15 @@ namespace Library_Item.Controllers
                 // Veri tabanına kaydedilecek yol
                 yeniUrun.ImageUrl = "/images/" + benzersizAd;
             }
+            else
+            {
+                // Varsayılan görsel
+                yeniUrun.ImageUrl = "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=500&auto=format&fit=crop";
+            }
+
+            // ModelState'teki UserId alanını doğrulama dışı bırakıyoruz çünkü elle atadık
+            ModelState.Remove("UserId");
+
             // Eğer formdan gelen veriler model kurallarına uygunsa
             if (ModelState.IsValid)
             {

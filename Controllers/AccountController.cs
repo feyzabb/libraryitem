@@ -54,8 +54,8 @@ namespace Library_Item.Controllers
                 return RedirectToAction("Index", "Home");
             }
 
-            ViewBag.HataMesaji = "E-posta veya şifre hatalı!";
-            return View();
+            TempData["LoginHata"] = "E-posta veya şifre hatalı!";
+            return RedirectToAction("Index", "Home");
         }
 
         // =======================================================

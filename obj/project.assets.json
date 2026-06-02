@@ -4327,11 +4327,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/feyza/Desktop/a/Library Item.csproj",
+      "projectUniqueName": "/Users/feyza/Desktop/KiralaBunu/Library Item.csproj",
       "projectName": "Library Item",
-      "projectPath": "/Users/feyza/Desktop/a/Library Item.csproj",
+      "projectPath": "/Users/feyza/Desktop/KiralaBunu/Library Item.csproj",
       "packagesPath": "/Users/feyza/.nuget/packages/",
-      "outputPath": "/Users/feyza/Desktop/a/obj/",
+      "outputPath": "/Users/feyza/Desktop/KiralaBunu/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/feyza/.nuget/NuGet/NuGet.Config"

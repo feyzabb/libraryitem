@@ -2,6 +2,14 @@
 <link rel="stylesheet" href="~/css/site.css" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
+@if (TempData["LoginHata"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show text-center fw-bold mx-3 mt-2 shadow-sm" role="alert" style="border-radius: 12px;">
+        <i class="bi bi-exclamation-triangle-fill me-2"></i>@TempData["LoginHata"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Kapat"></button>
+    </div>
+}
+
 <div class="bg-transparent border-0 mb-4">
     <div class="container">
         <ul class="nav category-nav d-flex justify-content-center flex-wrap gap-2 py-2">
@@ -75,8 +83,6 @@
 <div class="categories-segments my-4">
 </div>
 
-
-<div class="row
 
 <div class="container my-5">
     <div class="row">
