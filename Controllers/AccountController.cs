@@ -246,8 +246,37 @@ namespace Library_Item.Controllers
         // SEPETİ ONAYLAMA METODU (POST)
         // =======================================================
         [HttpPost]
-        public IActionResult ConfirmOrder()
+        public async Task<IActionResult> ConfirmOrder()
         {
+            int? itemId = HttpContext.Session.GetInt32("SelectedItemId");
+            string phone = HttpContext.Session.GetString("CustomerPhone") ?? "";
+
+            if (itemId.HasValue)
+            {
+                var item = await _context.Items.FindAsync(itemId.Value);
+                if (item != null)
+                {
+                    // Talep eden kişinin adını oturumdan al
+                    string requesterName = User.Identity.IsAuthenticated
+                        ? User.FindFirstValue(System.Security.Claims.ClaimTypes.GivenName) ?? "Misafir"
+                        : "Misafir";
+
+                    // Kiralama talebini veri tabanına kaydet
+                    var talep = new RentalRequest
+                    {
+                        ItemId = item.Id,
+                        ItemTitle = item.Title,
+                        CustomerPhone = phone,
+                        RequesterName = requesterName,
+                        OwnerUserId = item.UserId, // İlan sahibinin ID'si
+                        RequestDate = DateTime.Now
+                    };
+
+                    _context.RentalRequests.Add(talep);
+                    await _context.SaveChangesAsync();
+                }
+            }
+
             // Onay işleminden sonra sepeti (hafızayı) temizliyoruz
             HttpContext.Session.Remove("SelectedItemId");
             HttpContext.Session.Remove("CustomerPhone");
@@ -285,6 +314,31 @@ namespace Library_Item.Controllers
             // 3. Bu ilanları oluşturduğumuz MyItems.cshtml sayfasına gönderiyoruz
             return View(kullaniciIlanlari);
         }
+
+        // =======================================================
+        // İLAN SAHİBİNE GELEN KİRALAMA TALEPLERİ
+        // =======================================================
+        [Authorize]
+        [HttpGet]
+        public async Task<IActionResult> MyRequests()
+        {
+            var userIdString = User.FindFirstValue(System.Security.Claims.ClaimTypes.NameIdentifier);
+            if (string.IsNullOrEmpty(userIdString))
+            {
+                return RedirectToAction("Login");
+            }
+
+            int userId = int.Parse(userIdString);
+
+            // Sadece bu kullanıcının ilanlarına gelen talepleri getir
+            var gelenTalepler = await _context.RentalRequests
+                                              .Where(r => r.OwnerUserId == userId)
+                                              .OrderByDescending(r => r.RequestDate)
+                                              .ToListAsync();
+
+            return View(gelenTalepler);
+        }
+
         // 1. Sayfayı İlk Kez Açan Kod (Formu Gösterir)
         [Authorize]
         [HttpGet]

@@ -1,0 +1,74 @@
+@model IEnumerable<Library_Item.Models.RentalRequest>
+
+@{
+    ViewData["Title"] = "Gelen Kiralama Talepleri";
+}
+
+<div class="container mt-5">
+    <div class="card shadow-sm p-4" style="border-radius: 15px; border: none; min-height: 400px;">
+
+        <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-3">
+            <div class="d-flex align-items-center gap-2">
+                <h3 class="fw-bold text-dark m-0">
+                    <i class="bi bi-bell-fill text-danger me-2"></i>Gelen Kiralama Talepleri
+                </h3>
+                <span class="badge bg-danger">@Model.Count() Talep</span>
+            </div>
+
+            <a asp-controller="Account" asp-action="MyItems" class="btn btn-outline-secondary rounded-pill px-4 fw-bold btn-sm">
+                <i class="bi bi-arrow-left me-1"></i> İlanlarıma Dön
+            </a>
+        </div>
+
+        <hr />
+
+        @if (Model.Any())
+        {
+            <div class="table-responsive">
+                <table class="table table-hover align-middle">
+                    <thead class="table-light">
+                        <tr>
+                            <th>İlan Başlığı</th>
+                            <th>Talep Eden</th>
+                            <th>Telefon Numarası</th>
+                            <th>Talep Tarihi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var talep in Model)
+                        {
+                            <tr>
+                                <td>
+                                    <h6 class="fw-bold m-0 text-dark">@talep.ItemTitle</h6>
+                                </td>
+                                <td>
+                                    <span class="badge bg-primary-subtle text-primary border fw-bold">
+                                        <i class="bi bi-person-fill me-1"></i>@talep.RequesterName
+                                    </span>
+                                </td>
+                                <td>
+                                    <a href="tel:@talep.CustomerPhone" class="text-decoration-none fw-bold text-success">
+                                        <i class="bi bi-telephone-fill me-1"></i>@talep.CustomerPhone
+                                    </a>
+                                </td>
+                                <td>
+                                    <span class="text-muted small">
+                                        <i class="bi bi-clock me-1"></i>@talep.RequestDate.ToString("dd MMM yyyy - HH:mm")
+                                    </span>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
+        else
+        {
+            <div class="text-center py-5 my-auto">
+                <i class="bi bi-inbox text-muted" style="font-size: 4rem;"></i>
+                <p class="text-muted mt-3 fs-5">Henüz ilanlarınıza gelen bir kiralama talebi bulunmuyor.</p>
+                <p class="text-muted small">Birisi ilanınızı kiralamak istediğinde burada görünecek.</p>
+            </div>
+        }
+    </div>
+</div>

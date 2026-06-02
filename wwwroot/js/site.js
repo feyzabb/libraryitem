@@ -101,6 +101,11 @@ function updateAuthUI() {
                         <i class="bi bi-basket-fill me-2" style="color: var(--primary);"></i> Sepetim
                     </a>
                 </li>
+                <li>
+                    <a class="dropdown-item fw-bold py-2" href="/Account/MyRequests">
+                        <i class="bi bi-bell-fill me-2 text-danger"></i> Gelen Talepler
+                    </a>
+                </li>
                 <li><hr class="dropdown-divider"></li>
                 <li>
                     <button class="dropdown-item fw-bold py-2 text-danger" id="btn-logout-sim">
